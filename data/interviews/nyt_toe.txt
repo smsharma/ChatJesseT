@@ -1,0 +1,113 @@
+Can a Computer Devise a Theory of Everything?
+
+It might be possible, physicists say, but not anytime soon. And there’s no guarantee that we humans will understand the result.
+
+Once upon a time, Albert Einstein described scientific theories as “free inventions of the human mind.” But in 1980, Stephen Hawking, the renowned Cambridge University cosmologist, had another thought. In a lecture that year, he argued that the so-called Theory of Everything might be achievable, but that the final touches on it were likely to be done by computers.
+
+“The end might not be in sight for theoretical physics,” he said. “But it might be in sight for theoretical physicists.”
+
+The Theory of Everything is still not in sight, but with computers taking over many of the chores in life — translating languages, recognizing faces, driving cars, recommending whom to date — it is not so crazy to imagine them taking over from the Hawkings and the Einsteins of the world.
+
+Computer programs like DeepMind’s AlphaGo keep discovering new ways to beat humans at games like Go and chess, which have been studied and played for centuries. Why couldn’t one of these marvelous learning machines, let loose on an enormous astronomical catalog or the petabytes of data compiled by the Large Hadron Collider, discern a set of new fundamental particles or discover a wormhole to another galaxy in the outer solar system, like the one in the movie “Interstellar”?
+
+At least that’s the dream. To think otherwise is to engage in what the physicist Max Tegmark calls “carbon chauvinism.” In November, the Massachusetts Institute of Technology, where Dr. Tegmark is a professor, cashed a check from the National Science Foundation, and opened the metaphorical doors of the new Institute for Artificial Intelligence and Fundamental Interactions.
+
+The institute is one of seven set up by the foundation and the U.S. Department of Agriculture as part of a nationwide effort to galvanize work in artificial intelligence. Each receives $20 million over five years.
+
+The M.I.T.-based institute, directed by Jesse Thaler, a particle physicist, is the only one specifically devoted to physics. It includes more than two dozen scientists, from all areas of physics, from M.I.T., Harvard, Northeastern University and Tufts.
+
+“What I’m hoping to do is create a venue where researchers from a variety of different fields of physics, as well as researchers who work on computer science, machine-learning or A.I., can come together and have dialogue and teach each other things,” Dr. Thaler said over a Zoom call. “Ultimately, I want to have machines that can think like a physicist.”
+
+Rediscovering the fundamental laws
+Their tool in this endeavor is a brand of artificial intelligence known as neural networking. Unlike so-called expert systems like IBM’s Watson, which are loaded with human and scientific knowledge, neural networks are designed to learn as they go, similarly to the way human brains do. By analyzing vast amounts of data for hidden patterns, they swiftly learn to distinguish dogs from cats, recognize faces, replicate human speech, flag financial misbehavior and more.
+
+Editors’ Picks
+
+Taylor Swift, Pop’s Maestro of Memory, Returns to the Stage
+
+My Ex Refuses to Delete Images of My Father’s Corpse. What Can I Do?
+
+Watch Lance Reddick’s Best Performances
+Continue reading the main story
+“We’re hoping to discover all kinds of new laws of physics,” Dr. Tegmark said. “We’re already shown that it can rediscover laws of physics.”
+
+Last year, in what amounted to a sort of proof of principle, Dr. Tegmark and a student, Silviu-Marian Udrescu, took 100 physics equations from a famous textbook — “The Feynman Lectures on Physics” by Richard Feynman, Robert Leighton and Matthew Sands — and used them to generate data that was then fed to a neural network. The system sifted the data for patterns and regularities — and recovered all 100 formulas.
+
+“Like a human scientist, it tries many different strategies (modules) in turn,” the researchers wrote in a paper published last year in Science Advances. “And if it cannot solve the full problem in one fell swoop, it tries to transform it and divide it into simpler pieces that can be tackled separately, recursively relaunching the full algorithm on each piece.”
+
+In another more challenging experiment, Dr. Tegmark and his colleagues showed the network a video of rockets flying around and asked it to predict what would happen from one frame to the next. Never mind the palm trees in the background. “At the end, the computer was able to discover the essential equations of motion,” he said.
+
+Finding new particles at a place like CERN’s Large Hadron Collider would be a cinch, Dr. Tegmark said; A.I. likes big data, and the collider data runs to thousands of terabytes a second. Nevermind that a new particle hasn’t appeared in the CERN data since the discovery of the Higgs boson in 2012, despite years of frenzied examinations of every bump in the data stream.
+
+“Those are curves that humans look at,” Dr. Tegmark said. “In 10 years, machine-learning will be as essential to doing physics as knowing math.”
+
+For now, he conceded, there are limits to what can be achieved by the algorithm’s recursive method of problem solving, a practice known as regression. Although the machine can retrieve from a pile of data the fundamental laws of physics, it cannot yet come up with the deep principles — like quantum uncertainty in quantum mechanics, or relativity — that underlie those formulae.
+
+“By the times that A.I. comes back and tells you that, then we have reached artificial general intelligence, and you should be very scared or very excited, depending on your point of view,” Dr. Tegmark said. “The reason I’m working on this, honestly, is because what I find most menacing is, if we build super-powerful A.I. and have no clue how it works — right?”
+
+‘A dialogue between human and machine’
+Dr. Thaler, who directs the new institute at M.I.T., said he was once a skeptic about artificial intelligence but now was an evangelist. He realized that as a physicist he could encode some of his knowledge into the machine, which would then give answers that he could interpret more easily.
+
+“That becomes a dialogue between human and machine in a way that becomes more exciting,” he said, “rather than just having a black box you don’t understand making decisions for you.”
+
+He added, “I don’t particularly like calling these techniques ‘artificial intelligence,’ since that language masks the fact that many A.I. techniques have rigorous underpinnings in mathematics, statistics and computer science.”
+
+Yes, he noted, the machine can find much better solutions than he can despite all of his training: “But ultimately I still get to decide what concrete goals are worth accomplishing, and I can aim at ever more ambitious targets knowing that, if I can rigorously define my goals in a language the computer understands, then A.I. can deliver powerful solutions.”
+
+Recently, Dr. Thaler and his colleagues fed their neural network a trove of data from the Large Hadron Collider, which smashes together protons in search of new particles and forces. Protons, the building blocks of atomic matter, are themselves bags of smaller entities called quarks and gluons. When protons collide, these smaller particles squirt out in jets, along with whatever other exotic particles have coalesced out of the energy of the collision. To better understand this process, he and his team asked the system to distinguish between the quarks and the gluons in the collider data.
+
+“We said, ‘I’m not going to tell you anything about quantum field theory; I’m not going to tell you what a quark or gluon is at a fundamental level,’” he said. “I’m just going to say, ‘Here’s a mess of data, please separate it into basically two categories.’ And it can do it.”
+
+That is, the system successfully identified and distinguished between quarks and gluons, without ever knowing what either was. If you then ask the system if there is a third type of object in the data, Dr. Thaler said, it starts to discover that quarks are not just one entity but exist in different types — so-called up-quarks and down-quarks.
+
+“And so it starts to, like, learn as you give it more flexibility to explore,” he said. “It doesn’t know quantum field theory yet, but it knows to look for patterns. And this is a pattern that I was shocked that the machine would find.” The work, he added, would help collider physicists untangle their results.
+
+At one point during a Zoom conversation, Dr. Thaler displayed what he called “a goofy cartoon” of the neural net that had been used for the quark-gluon project. It looked like a pile of multicolored rubber bands, but it represented several layers of processing, involving some 30,000 nodes, or “neurons,” where information was gathered and passed on.
+
+“This is the kind of small network you could train on your laptop, if you waited long enough,” he said.
+
+It would fit on a small chip and is fast enough to be used in colliders to help decide which collisions to keep for study and which to discard. Since the collisions happen 40 million times a second, there isn’t a lot of time to decide.
+
+Another feature of this new field, Dr. Thaler said, was that it provided a common language for researchers from vastly different fields of endeavor. It turned out that the mathematics involved in solving the collider problem were also applicable to optimizing shipping schedules for an outfit like Amazon.
+
+“The most surprising discoveries have come from realizing that someone else had precisely the tool or precisely the widget that can actually help me understand my problems in a new light,” Dr. Thaler said. “And from there, to actually do things that had never been done before.”
+
+The start of something quantum
+“One of the reasons A.I. has been so successful at solving games,” Dr. Thaler said, “is that games have a very well-defined notion of success.” He added, “If we could define what success means for physical laws, that would be an incredible breakthrough.”
+
+“In five to 10 years from now, I’m going to want to do exactly what you’re getting at: Here’s the data, here’s a very rough tool kit; find the equation I could put on a T-shirt, the equation that replaces the Standard Model of particle physics. What’s the equation that replaces Einstein’s general relativity?”
+
+Some physicists think the next great leap will come with advent of A.I. on quantum computers. Unlike classical computers, which manipulate bits that can be 1 or 0, the so-called qubits in quantum computers can be both at once. According to quantum physics, that is how elementary particles behave on the smallest scales of nature, and it allows quantum computers to process vast amounts of information simultaneously.
+
+Such machines are still in their infancy, but they hold great promise, said Seth Lloyd, a mechanical engineer and quantum computing expert at M.I.T. who is not part of the new artificial-intelligence institute there.
+
+“The basic insight is that quantum systems can generate patterns that are hard for classical systems to generate,” Dr. Lloyd said. “So maybe quantum systems can also recognize patterns that classical systems recognize.”
+
+Or as Joe Lykken, deputy director of research at the Fermi National Accelerator Laboratory in Batavia, Ill., put it, “To paraphrase Richard Feynman, if you want to use A.I. to discover things about our quantum world, you should use quantum A.I.”
+
+Maria Spiropulu, a physicist at the California Institute of Technology, pointed to the growing literature “on quantum A.I. and quantum-inspired algorithms that solve problems that we thought of as unsolvable previously.” She added, “It’s like Plato’s allegory of the cave and the theory of forms coming-of-age!”
+
+‘It’s just an algorithm running’
+How far this could go depends on whom you ask. Could a machine produce the abstruse and unintuitive principles of quantum theory, or Einstein’s bulwark principles of relativity? Could it produce a theory that we humans can’t understand? Could we wind up in the Matrix, or a world run by SkyNet, like in the “Terminator” series?
+
+I asked a random sample of theoretical physicists whether they were ready to be replaced.
+
+“The way you are asking is adding to the confusion,” said Jaron Lanier, a computer engineer now working with Microsoft. The field of computer science, he said, is rife with romantic overstatements about the power and threat of superintelligent machines.
+
+“Can we form a question in such a way that we can do the computation?” he asked. “Remove the romanticism. It’s not a creature like a cat, it’s just an algorithm running.”
+
+Steven Weinberg, a Nobel laureate and a professor at the University of Texas at Austin, called it “a troubling thought” that humans might not be smart enough to understand the final Theory of Everything. “But I suspect in that case,” he wrote in an email, “we will also not be smart enough to design a computer that can find a final theory.”
+
+Lisa Randall, a physicist at Harvard, wrote: “I can readily imagine computers finding equations or relationships we don’t know how to interpret. But that is not really different from the many measurements we cannot yet explain.”
+
+Nima Arkani-Hamed, a theorist at the Institute for Advanced Study in Princeton, N.J., took issue with the idea that the computer would discover something too deep for humans to comprehend: “This does not reflect what we see in the character of the laws of nature, which we have come to see over the centuries are based on fewer, deeper, simpler if more abstract, mathematical ideas.”
+
+If Isaac Newton came back from the dead, for example, Dr. Arkani-Hamed said, he would have no trouble getting up to speed on contemporary physics: “Indeed, scores of non-Newtons manage to do this over the course of a four-year undergraduate education.”
+
+Michael Turner, a cosmologist at the Kavli Foundation in Los Angeles, said it ultimately didn’t matter where our ideas came from, so long as they were battle-tested before we relied on them.
+
+“So where do we get these theories or paradigms? It can be from deep principles — symmetry, beauty, simplicity — philosophical principles, religion or the local drunk,” he said. “As machines become smarter, we can add them to the list of sources.”
+
+Edward Witten, also of the Institute for Advanced Study in Princeton, noted that although a theory-of-everything machine didn’t exist yet, it might in the next century. “If there were a machine that appeared to be interested in and curious about physics, I would certainly be interested in conversing with it.”
+
+No doubt it would be interested in talking with him.
