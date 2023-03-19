@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>ChatJesseT</title>
+    <style>
+        body {
+            font-family: "Inconsolata", Courier, monospace;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+        }
+
+        .query-box {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #result {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            /* Add space between the returned query and the footer */
+        }
+
+        #result img {
+            width: 120px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        #result p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        #result .query {
+            font-weight: bold;
+            display: inline;
+            /* Show question to the right of "Query:" text */
+        }
+
+        #result em {
+            font-style: italic;
+            display: inline;
+            /* Show question to the right of "Query:" text */
+            margin-left: 5px;
+        }
+
+        #result p:first-child {
+            margin-bottom: 10px;
+        }
+
+        .btn-maroon {
+            background-color: maroon;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ChatJesseT</h1>
+        <p>Type your question below.
+        </p>
+        <form method="POST" class="query-box">
+            <div class="form-group">
+                <label for="query">Your question:</label>
+                <div class="input-group">
+                    <input type="text" name="query" id="query" class="form-control">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-maroon">Ask</button>
+                        <!-- Move the ask button to the right of the text box -->
+                    </div>
+                </div>
+            </div>
+        </form>
+        {% if result %}
+        <div id="result">
+            <img src="{{ url_for('static', filename='jessminator.png') }}">
+            <div>
+                <p><span class="query">Query:</span><em>{{ query }}</em></p>
+                <p>{{ result }}</p>
+            </div>
+        </div>
+        {% endif %}
+        <footer>&copy; 2023. Official IAIFI product. NSF funds were liberally used in the development of ChatJesseT.
+        </footer>
+    </div>
+</body>
+
+</html>

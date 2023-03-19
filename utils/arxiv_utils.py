@@ -5,16 +5,28 @@ import zipfile
 import requests
 import fnmatch
 import subprocess
+import re
 
 import pandas as pd
 from tqdm import tqdm
 
 
-def get_inspire_hep_papers(author):
+def remove_latex_preamble(latex_source):
+    """Remove the LaTeX preamble from a string containing LaTeX source."""
+    # Regular expression to match the preamble
+    preamble_pattern = re.compile(r"\\documentclass.*?(?=\\begin\{document\})", re.DOTALL | re.MULTILINE)
+
+    # Remove the preamble using the re.sub function
+    cleaned_latex_source = preamble_pattern.sub("", latex_source)
+
+    return cleaned_latex_source
+
+
+def get_inspire_hep_papers(author, year_cutoff=2013):
     """Get all papers from Inspire-HEP for a given author."""
     inspire_url = "https://inspirehep.net/api/literature"
     params = {
-        "q": f"author:{author}",
+        "q": f"author:{author} and date > {year_cutoff}-01-01",
         "size": 1000,  # Increase this value if the author has more than 1000 papers
         "fields": "arxiv_eprints",
     }
@@ -49,7 +61,8 @@ def download_arxiv_pdf(arxiv_id, output_dir="../data/papers"):
 
 def download_arxiv_source(arxiv_id, output_dir="../data/papers"):
     """Download the source code of a paper from arXiv; if failed, download the PDF instead."""
-    try:  # Try to download the source
+    # Try to download the source
+    try:
         url = f"https://arxiv.org/e-print/{arxiv_id}"
         response = requests.get(url, stream=True)
 
@@ -65,11 +78,10 @@ def download_arxiv_source(arxiv_id, output_dir="../data/papers"):
                 extension = ".gz"
             elif "application/zip" in content_type:
                 extension = ".zip"
-            elif "application/x-eprint-z" in content_type:
-                extension = ".Z"
             else:
                 raise ValueError(f"Unknown content type: {content_type}")
 
+            # For papers with the older arXiv ID format, replace the slash with an underscore
             arxiv_id = arxiv_id.replace("/", "_")
             filename = f"{arxiv_id}{extension}"
             file_path = os.path.join(output_dir, filename)
@@ -92,18 +104,6 @@ def download_arxiv_source(arxiv_id, output_dir="../data/papers"):
                 with zipfile.ZipFile(file_path, "r") as zip_ref:
                     zip_ref.extractall(extracted_folder)
                 os.remove(file_path)
-            elif extension == ".Z":
-                with open(file_path, "wb") as f:
-                    shutil.copyfileobj(response.raw, f)
-                try:
-                    subprocess.run(["uncompress", file_path], check=True)
-                    file_path = file_path[:-2]  # Remove the .Z extension
-                except subprocess.CalledProcessError as e:
-                    print(f"Error while uncompressing {arxiv_id}: {str(e)}")
-                    os.remove(file_path)
-                    return
-                extension = os.path.splitext(file_path)[-1]
-
             else:
                 print(f"Downloaded {arxiv_id} as a PDF file: {file_path}")
                 return
@@ -113,9 +113,11 @@ def download_arxiv_source(arxiv_id, output_dir="../data/papers"):
                 for filename in fnmatch.filter(filenames, "*.tex"):
                     file = os.path.join(root, filename)
                     main_tex_candidates.append(file)
-
+            print(f"Found {len(main_tex_candidates)} .tex files in {arxiv_id}")
+            print(f"They are: {main_tex_candidates}")
             if main_tex_candidates:
                 main_tex = max(main_tex_candidates, key=lambda f: os.path.getsize(f))
+                print(f"Using {main_tex} as the main .tex file")
                 for root, dirs, files in os.walk(extracted_folder, topdown=False):
                     for file in files:
                         file_path = os.path.join(root, file)
@@ -127,49 +129,22 @@ def download_arxiv_source(arxiv_id, output_dir="../data/papers"):
                             os.rmdir(dir_path)
 
                 # Move the main .tex file to the parent output_folder
-                main_tex_new_path = os.path.join(output_dir, os.path.basename(main_tex))
+                main_tex_new_path = os.path.join(output_dir, arxiv_id + "_" + os.path.basename(main_tex))
                 shutil.move(main_tex, main_tex_new_path)
 
-                # Delete the extracted_folder
-                for root, dirs, files in os.walk(extracted_folder, topdown=False):
-                    for file in files:
-                        file_path = os.path.join(root, file)
-                        os.remove(file_path)
-                    for dir in dirs:
-                        dir_path = os.path.join(root, dir)
-                        os.rmdir(dir_path)
-                os.rmdir(extracted_folder)
+                # # Delete the extracted_folder
+                # for root, dirs, files in os.walk(extracted_folder, topdown=False):
+                #     for file in files:
+                #         file_path = os.path.join(root, file)
+                #         os.remove(file_path)
+                #     for dir in dirs:
+                #         dir_path = os.path.join(root, dir)
+                #         os.rmdir(dir_path)
+                # os.rmdir(extracted_folder)
             else:
                 print(f"No main file found for {arxiv_id}")
         else:
             print(f"Error {response.status_code} while downloading {arxiv_id}")
-    except:  # If all else fails, download the PDF
+    except:
+        # If all else fails, download the PDF
         download_arxiv_pdf(arxiv_id, output_dir=output_dir)
-
-
-def get_pdf_filenames(directory):
-    """Get the filenames of all PDF files in a directory."""
-    all_files = os.listdir(directory)
-    pdf_files = [file for file in all_files if file.lower().endswith(".pdf")]
-    return pdf_files
-
-
-def delete_files_except_extensions(directory_path, extensions_list):
-    """Delete all files and folders from a directory except those whose extension is in the specified list."""
-    for root, dirs, files in os.walk(directory_path):
-        for file in files:
-            file_path = os.path.join(root, file)
-            file_extension = os.path.splitext(file_path)[1]
-            if file_extension not in extensions_list:
-                os.remove(file_path)
-        for dir in dirs:
-            dir_path = os.path.join(root, dir)
-            if not os.listdir(dir_path):
-                os.rmdir(dir_path)
-
-
-def get_filenames_with_extensions(directory, extensions_list):
-    """Get the filenames of all files with specified extensions in a directory."""
-    all_files = os.listdir(directory)
-    filtered_files = [file for file in all_files if os.path.splitext(file)[1].lower() in extensions_list]
-    return filtered_files
