@@ -21,14 +21,6 @@ The M.I.T.-based institute, directed by Jesse Thaler, a particle physicist, is t
 Rediscovering the fundamental laws
 Their tool in this endeavor is a brand of artificial intelligence known as neural networking. Unlike so-called expert systems like IBM’s Watson, which are loaded with human and scientific knowledge, neural networks are designed to learn as they go, similarly to the way human brains do. By analyzing vast amounts of data for hidden patterns, they swiftly learn to distinguish dogs from cats, recognize faces, replicate human speech, flag financial misbehavior and more.
 
-Editors’ Picks
-
-Taylor Swift, Pop’s Maestro of Memory, Returns to the Stage
-
-My Ex Refuses to Delete Images of My Father’s Corpse. What Can I Do?
-
-Watch Lance Reddick’s Best Performances
-Continue reading the main story
 “We’re hoping to discover all kinds of new laws of physics,” Dr. Tegmark said. “We’re already shown that it can rediscover laws of physics.”
 
 Last year, in what amounted to a sort of proof of principle, Dr. Tegmark and a student, Silviu-Marian Udrescu, took 100 physics equations from a famous textbook — “The Feynman Lectures on Physics” by Richard Feynman, Robert Leighton and Matthew Sands — and used them to generate data that was then fed to a neural network. The system sifted the data for patterns and regularities — and recovered all 100 formulas.

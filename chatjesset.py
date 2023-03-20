@@ -16,6 +16,7 @@ embeddings = np.load("./data/db/embeddings.npy")
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 with open("./data/db/system_prompt.txt") as f:
+    """Load system prompt."""
     system_prompt = " ".join(line.rstrip() for line in f)
 
 with open("./data/db/context_prompt.txt") as f:
@@ -23,16 +24,17 @@ with open("./data/db/context_prompt.txt") as f:
 
 
 def semantic_search(query_embedding, embeddings):
+    """Load context prompt."""
     similarities = cosine_similarity([query_embedding], embeddings)[0]
     ranked_indices = np.argsort(-similarities)
     return ranked_indices
 
 
 def answer_question(chunk, question, model="gpt-3.5-turbo", max_tokens=300, temperature=0.7):
-    question = f"Here is some information: {chunk}\nQuestion: {question}. {context_prompt}"
+    prompt = f"Use the following pieces of context to answer the question at the end: {chunk}\nQuestion: {question}. {context_prompt}. \nAnswer:"
     response = openai.ChatCompletion.create(
         model=model,
-        messages=[{"role": "system", "content": system_prompt}, {"role": "user", "content": question}],
+        messages=[{"role": "system", "content": system_prompt}, {"role": "user", "content": prompt}],
         max_tokens=max_tokens,
         n=1,
         temperature=temperature,

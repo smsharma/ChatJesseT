@@ -79,26 +79,28 @@
         </p>
         <form method="POST" class="query-box">
             <div class="form-group">
-                <label for="query">Your question:</label>
                 <div class="input-group">
                     <input type="text" name="query" id="query" class="form-control">
                     <div class="input-group-append">
                         <button type="submit" class="btn btn-maroon">Ask</button>
-                        <!-- Move the ask button to the right of the text box -->
                     </div>
                 </div>
             </div>
         </form>
-        {% if result %}
         <div id="result">
             <img src="{{ url_for('static', filename='jessminator.png') }}">
             <div>
+                {% if result %}
                 <p><span class="query">Query:</span><em>{{ query }}</em></p>
                 <p>{{ result }}</p>
+                {% else %}
+                <p>Welcome to ChatJesseT! Please enter your question above, and I'll do my best to help you.</p>
+                {% endif %}
             </div>
         </div>
-        {% endif %}
-        <footer>&copy; 2023. Official IAIFI product. NSF funds were liberally used in the development of ChatJesseT.
+        <footer>&copy; 2023. Official <a href="https://iaifi.org/">IAIFI</a> product. NSF funds were liberally used in
+            the development of ChatJesseT.
+            <br> With apologies to Jesse Thaler.
         </footer>
     </div>
 </body>
