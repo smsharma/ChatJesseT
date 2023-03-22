@@ -4,12 +4,12 @@
 
 Set the OpenAI key (for embedding and chat completion calls):
 ```
-export OPENAI_API_KEY ="sk-xxx..."
+export OPENAI_API_KEY="sk-xxx..."
 ```
 
 Set a system prompt at `data/db/system_prompt.txt` and a context prompt at `data/db/context_prompt.txt`. The former will guide the general characteristics of the chatbot, while the later will give a stronger immediate signal.
 
-To create text chunks and embeddings, run [`notebooks/01_data_collection.ipynb`](notebooks/01_data_collection.ipynb) and [`notebooks/01_data_collection.ipynb`](notebooks/02_embedding.ipynb).
+To create text chunks and embeddings, run [`notebooks/01_data_collection.ipynb`](notebooks/01_data_collection.ipynb) and [`notebooks/02_embedding.ipynb`](notebooks/02_embedding.ipynb).
 
 For local testing, simply do
 ```
