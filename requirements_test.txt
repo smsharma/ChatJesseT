@@ -65,3 +65,4 @@ typing_extensions==4.5.0
 urllib3==1.26.15
 Werkzeug==2.2.3
 yarl==1.8.2
+tenacity==8.2.2
