@@ -15,6 +15,17 @@
             margin-top: 15px;
         }
 
+        a {
+            color: maroon;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: maroon;
+            text-decoration: underline;
+        }
+
+
         .container {
             max-width: 800px;
         }
@@ -76,7 +87,9 @@
 
 <body>
     <div class="container">
-        <h1>ChatJesseT</h1>
+        <h1>
+            <a href="{{ url_for('home') }}">ChatJesseT</a>
+        </h1>
         <p>Type your question below.
         </p>
         <form method="POST" class="query-box">
@@ -102,7 +115,7 @@
         </div>
         <footer>&copy; 2023. Official <a href="https://iaifi.org/">IAIFI</a> product. No NSF funds were harmed in
             the development of ChatJesseT.
-            <br> <em>Disclaimer:</em> The output of ChatJesseT is produced by an inscrutable pile of linear algebra and
+            <br> <em>Disclaimer:</em> The output of ChatJesseT is produced by an giant inscrutable matrices and
             does not
             reflect
             the opinions of the real Jesse Thaler.
