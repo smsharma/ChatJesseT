@@ -1,5 +1,7 @@
 # ChatJesseT
 
+## Usage
+
 `requirements_test.txt` contains the full python environment used for development and testing. `requirements.txt` contains the more minimal version for deploying the Flask app.
 
 Set the OpenAI key (for embedding and chat completion calls):
@@ -26,3 +28,11 @@ and navigate to the remote URL via
 gcloud app browse
 ```
 See [here](https://cloud.google.com/appengine/docs/standard/python3/runtime) for preliminary steps necessary for Google Cloud / App Engine deployment.
+
+## TODO
+
+- [ ] Fix parsing issues from personal website scrapt
+- [ ] Decrease embedding size and stride
+- [ ] Increase number of relevant blocks used for context
+- [ ] Set up a DB/streaming approach to cache text and embeddings db
+- [ ] Estimate costs and plan deployment accordingly
