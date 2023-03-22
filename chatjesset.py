@@ -1,17 +1,17 @@
 import os
 
-os.environ["TOKENIZERS_PARALLELISM"] = "false"
+# os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 import openai
-import pandas as pd
+
+# import pandas as pd
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
-from sentence_transformers import SentenceTransformer
+import csv
 
-n_relevant_chunks = 3
+from utils.embedding_utils import get_embedding
 
-df_emb = pd.read_csv("./data/db/text_chunks.csv")
-embeddings = np.load("./data/db/embeddings.npy")
+n_relevant_chunks = 1
 
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
@@ -42,20 +42,23 @@ def answer_question(chunk, question, model="gpt-3.5-turbo", max_tokens=300, temp
     return response["choices"][0]["message"]["content"]
 
 
-# def get_embedding(text, model="text-embedding-ada-002"):
-#     text = text.replace("\n", " ")
-#     return openai.Embedding.create(input=[text], model=model)["data"][0]["embedding"]
-
-
-def get_embedding(text, model="all-MiniLM-L6-v2"):
-    model = SentenceTransformer(model, device="cpu")
-    return model.encode(text)
-
-
 def run(query):
-    query_embedding = get_embedding(query)
-    ranked_indices = semantic_search(np.array(query_embedding), embeddings)
-    most_relevant_chunk = " ".join(np.array(df_emb["text_chunks"])[ranked_indices[:n_relevant_chunks]].flatten())
-    answer = answer_question(most_relevant_chunk, query)
-    answer.strip("\n")
-    return answer
+    if not query:
+        return "Please enter your question above, and I'll do my best to help you."
+    if len(query) > 150:
+        return "Please ask a shorter question!"
+    else:
+        with open("./data/db/text_chunks.csv") as csv_file:
+            csv_reader = csv.reader(csv_file)
+            embeddings = np.load("./data/db/embeddings.npy")
+
+            query_embedding = get_embedding(query)
+            ranked_indices = semantic_search(np.array(query_embedding), embeddings)
+            most_relevant_chunk = ""
+            for i, row in enumerate(csv_reader):
+                if i in ranked_indices[:n_relevant_chunks]:
+                    most_relevant_chunk += " ".join(row)
+
+            answer = answer_question(most_relevant_chunk, query)
+            answer.strip("\n")
+            return answer

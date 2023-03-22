@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="icon" type="image/png" href="static/favicon.png">
     <title>ChatJesseT</title>
     <style>
         body {
-            font-family: "Inconsolata", Courier, monospace;
+            font-family: 'Lato', sans-serif;
             color: #333;
+            margin-top: 15px;
         }
 
         .container {
@@ -91,16 +93,20 @@
             <img src="{{ url_for('static', filename='jessminator.png') }}">
             <div>
                 {% if result %}
-                <p><span class="query">Query:</span><em>{{ query }}</em></p>
+                <p><span class="query">Question:</span><em>{{ query }}</em></p>
                 <p>{{ result }}</p>
                 {% else %}
-                <p>Welcome to ChatJesseT! Please enter your question above, and I'll do my best to help you.</p>
+                <p>Welcome to ChatJesseT! <br> Please enter your question above, and I'll do my best to help you.</p>
                 {% endif %}
             </div>
         </div>
-        <footer>&copy; 2023. Official <a href="https://iaifi.org/">IAIFI</a> product. NSF funds were liberally used in
+        <footer>&copy; 2023. Official <a href="https://iaifi.org/">IAIFI</a> product. No NSF funds were harmed in
             the development of ChatJesseT.
-            <br> With apologies to Jesse Thaler.
+            <br> <em>Disclaimer:</em> The output of ChatJesseT is produced by an inscrutable pile of linear algebra and
+            does not
+            reflect
+            the opinions of the real Jesse Thaler.
+            <!-- With apologies to Jesse Thaler. -->
         </footer>
     </div>
 </body>
