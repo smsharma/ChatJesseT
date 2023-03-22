@@ -31,8 +31,9 @@ See [here](https://cloud.google.com/appengine/docs/standard/python3/runtime) for
 
 ## TODO
 
-- [ ] Fix parsing issues from personal website scrapt
+- [ ] Fix parsing issues from personal website scrape
 - [ ] Decrease embedding size and stride
 - [ ] Increase number of relevant blocks used for context
 - [ ] Set up a DB/streaming approach to cache text and embeddings db
 - [ ] Estimate costs and plan deployment accordingly
+- [ ] Make config store
