@@ -1,19 +1,17 @@
 import os
-
-# os.environ["TOKENIZERS_PARALLELISM"] = "false"
-
+import pandas as pd
 import openai
-
-# import pandas as pd
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 import csv
-
+from google.cloud import storage
+import io
 from utils.embedding_utils import get_embedding
 
-n_relevant_chunks = 1
+n_relevant_chunks = 3
 
 openai.api_key = os.environ.get("OPENAI_API_KEY")
+storage_client = storage.Client()
 
 with open("./data/db/system_prompt.txt") as f:
     """Load system prompt."""
@@ -42,23 +40,65 @@ def answer_question(chunk, question, model="gpt-3.5-turbo", max_tokens=300, temp
     return response["choices"][0]["message"]["content"]
 
 
+# def load_csv_file_from_gcs(bucket_name, file_name):
+#     bucket = storage_client.get_bucket(bucket_name)
+#     blob = bucket.blob(file_name)
+#     csv_string = blob.download_as_text()
+#     csv_file = io.StringIO(csv_string)
+#     return csv.reader(csv_file)
+
+
+def load_csv_file_from_gcs(bucket_name, file_name):
+    gcs_path = f"gs://{bucket_name}/{file_name}"
+    return pd.read_csv(gcs_path)
+
+
+def load_npy_file_from_gcs(bucket_name, file_name):
+    bucket = storage_client.get_bucket(bucket_name)
+    blob = bucket.blob(file_name)
+    npy_string = blob.download_as_bytes()
+    npy_file = io.BytesIO(npy_string)
+    return np.load(npy_file)
+
+
+# def run(query):
+#     if not query:
+#         return "Please enter your question above, and I'll do my best to help you."
+#     if len(query) > 150:
+#         return "Please ask a shorter question!"
+#     else:
+#         df_emb = pd.read_csv("./data/db/text_chunks.csv")
+#         embeddings = np.load("./data/db/embeddings.npy")
+
+#         query_embedding = get_embedding(query)
+#         ranked_indices = semantic_search(np.array(query_embedding), embeddings)
+#         most_relevant_chunk = " ".join(np.array(df_emb["text_chunks"])[ranked_indices[:n_relevant_chunks]].flatten())
+
+#         print(most_relevant_chunk)
+
+#         answer = answer_question(most_relevant_chunk, query)
+#         answer.strip("\n")
+#         return answer
+
+
 def run(query):
     if not query:
         return "Please enter your question above, and I'll do my best to help you."
     if len(query) > 150:
         return "Please ask a shorter question!"
     else:
-        with open("./data/db/text_chunks.csv") as csv_file:
-            csv_reader = csv.reader(csv_file)
-            embeddings = np.load("./data/db/embeddings.npy")
+        # csv_reader = load_csv_file_from_gcs("chatjesset.appspot.com", "text_chunks.csv")
+        df_text = load_csv_file_from_gcs("chatjesset.appspot.com", "text_chunks.csv")
 
-            query_embedding = get_embedding(query)
-            ranked_indices = semantic_search(np.array(query_embedding), embeddings)
-            most_relevant_chunk = ""
-            for i, row in enumerate(csv_reader):
-                if i in ranked_indices[:n_relevant_chunks]:
-                    most_relevant_chunk += " ".join(row)
+        embeddings = load_npy_file_from_gcs("chatjesset.appspot.com", "embeddings.npy")
 
-            answer = answer_question(most_relevant_chunk, query)
-            answer.strip("\n")
-            return answer
+        query_embedding = get_embedding(query)
+        ranked_indices = semantic_search(np.array(query_embedding), embeddings)
+        # most_relevant_chunk = " ".join([row[0] for idx, row in enumerate(csv_reader) if idx in ranked_indices[:n_relevant_chunks]])
+        most_relevant_chunk = " ".join(df_text.loc[ranked_indices[:n_relevant_chunks], "text_chunks"].values.flatten())
+
+        print(most_relevant_chunk)
+
+        answer = answer_question(most_relevant_chunk, query)
+        answer.strip("\n")
+        return answer

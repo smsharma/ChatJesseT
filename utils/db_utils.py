@@ -16,12 +16,14 @@ def scrape_website_text(url):
             script.decompose()
 
         # Get text and remove leading/trailing whitespaces
-        text = soup.get_text(strip=True)
+        text = soup.get_text(separator="\n")
 
-        # Replace multiple whitespaces with a single space
-        clean_text = " ".join(text.split())
+        # Preserve line breaks
+        clean_text = ""
+        for line in text.split("\n"):
+            clean_text += line.strip() + "\n"
 
-        return clean_text
+        return clean_text.strip()
 
     except requests.exceptions.RequestException as e:
         print(f"Error while fetching URL {url}: {e}")

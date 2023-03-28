@@ -5,3 +5,13 @@ pandas==1.5.3
 scikit-learn==1.2.2
 scipy==1.10.1
 tenacity==8.2.2
+gcloud==0.18.3
+gcsfs==2023.3.0
+google-api-core==2.11.0
+google-auth==2.16.3
+google-auth-oauthlib==1.0.0
+google-cloud-core==2.3.2
+google-cloud-storage==2.7.0
+google-crc32c==1.5.0
+google-resumable-media==2.4.1
+googleapis-common-protos==1.58.0

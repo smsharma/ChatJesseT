@@ -27,7 +27,9 @@ and navigate to the remote URL via
 ```
 gcloud app browse
 ```
-See [here](https://cloud.google.com/appengine/docs/standard/python3/runtime) for preliminary steps necessary for Google Cloud / App Engine deployment.
+See [here](https://cloud.google.com/appengine/docs/standard/python3/runtime) for preliminary steps necessary for Google Cloud / App Engine deployment. For initing [Google Cloud](https://cloud.google.com/docs/authentication/provide-credentials-adc#how-to).
+
+To upload the text chunks and embeddings to Google Cloud, do this manually [here](https://console.cloud.google.com/storage/browser/chatjesset.appspot.com)
 
 ## TODO
 

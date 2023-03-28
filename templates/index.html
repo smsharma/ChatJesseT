@@ -4,10 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                tags: 'ams'
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
+            },
+            startup: {
+                ready: () => {
+                    MathJax.startup.defaultReady();
+                }
+            }
+        };
+    </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="icon" type="image/png" href="static/favicon.png">
     <title>ChatJesseT</title>
+
     <style>
         body {
             font-family: 'Lato', sans-serif;
@@ -107,7 +128,8 @@
             <div>
                 {% if result %}
                 <p><span class="query">Question:</span><em>{{ query }}</em></p>
-                <p>{{ result }}</p>
+                <!-- <p>{{ result }}</p> -->
+                <p>{{ result | safe }}</p>
                 {% else %}
                 <p>Welcome to ChatJesseT! <br> Please enter your question above, and I'll do my best to help you.</p>
                 {% endif %}
