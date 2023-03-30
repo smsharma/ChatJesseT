@@ -6,8 +6,6 @@ import os
 
 import openai
 
-# from sentence_transformers import SentenceTransformer
-
 
 def sliding_window(text, window_size, stride):
     tokens = text.split()
@@ -27,8 +25,3 @@ def get_embedding(text, model="text-embedding-ada-002"):
     openai.api_key = os.environ.get("OPENAI_API_KEY")
     text = text.replace("\n", " ")
     return embedding_with_backoff(input=[text], model=model)["data"][0]["embedding"]
-
-
-# def get_embedding(text, model="all-MiniLM-L6-v2"):
-#     model = SentenceTransformer(model, device="cpu")
-#     return model.encode(text)

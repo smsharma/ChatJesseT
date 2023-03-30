@@ -24,6 +24,7 @@
             }
         };
     </script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="icon" type="image/png" href="static/favicon.png">
@@ -46,7 +47,6 @@
             text-decoration: underline;
         }
 
-
         .container {
             max-width: 800px;
         }
@@ -61,7 +61,6 @@
             align-items: center;
             margin-top: 10px;
             margin-bottom: 20px;
-            /* Add space between the returned query and the footer */
         }
 
         #result img {
@@ -78,13 +77,11 @@
         #result .query {
             font-weight: bold;
             display: inline;
-            /* Show question to the right of "Query:" text */
         }
 
         #result em {
             font-style: italic;
             display: inline;
-            /* Show question to the right of "Query:" text */
             margin-left: 5px;
         }
 
@@ -116,7 +113,7 @@
         <form method="POST" class="query-box">
             <div class="form-group">
                 <div class="input-group">
-                    <input type="text" name="query" id="query" class="form-control">
+                    <input type="text" name="query" id="query" class="form-control" autocomplete="off">
                     <div class="input-group-append">
                         <button type="submit" class="btn btn-maroon">Ask</button>
                     </div>
@@ -125,17 +122,20 @@
         </form>
         <div id="result">
             <img src="{{ url_for('static', filename='jessminator.png') }}">
+            <div id="loading-indicator" style="display: none;">
+                <img src="static/energyflowanimation.gif" alt="Thinking..." width="100">
+            </div>
             <div>
                 {% if result %}
                 <p><span class="query">Question:</span><em>{{ query }}</em></p>
-                <!-- <p>{{ result }}</p> -->
                 <p>{{ result | safe }}</p>
                 {% else %}
-                <p>Welcome to ChatJesseT! <br> Please enter your question above, and I'll do my best to help you.</p>
+                <p>Welcome to ChatJesseT! <br> Please enter your question above, and I'll do my best to answer it.</p>
                 {% endif %}
             </div>
         </div>
-        <footer>&copy; 2023. Official <a href="https://iaifi.org/">IAIFI</a> product. No NSF funds were harmed in
+        <footer>&copy; 2023. Official <a href="https://iaifi.org/" target="_blank">IAIFI</a> product. No NSF funds were
+            harmed in
             the development of ChatJesseT.
             <br> <em>Disclaimer:</em> The output of ChatJesseT is produced by giant inscrutable matrices and
             does not
@@ -144,6 +144,25 @@
             <!-- With apologies to Jesse Thaler. -->
         </footer>
     </div>
+    <script>
+        const form = document.querySelector('.query-box');
+        const submitButton = document.querySelector('#submit-button');
+        const loadingIndicator = document.querySelector('#loading-indicator');
+        const resultContent = document.querySelector('#result-content');
+
+        form.addEventListener('submit', (event) => {
+            loadingIndicator.style.display = 'block';
+            resultContent.style.display = 'none';
+            submitButton.disabled = true;
+        });
+
+        function showResultContent() {
+            loadingIndicator.style.display = 'none';
+            resultContent.style.display = 'block';
+            submitButton.disabled = false;
+        }
+    </script>
+
 </body>
 
 </html>

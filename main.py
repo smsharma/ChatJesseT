@@ -8,7 +8,10 @@ app = Flask(__name__)
 def index():
     if request.method == "POST":
         query = request.form["query"]
-        result = run(query)
+        try:
+            result = run(query)
+        except Exception as e:
+            result = f"Whoops something didn't quite work! Perhaps too many people are trying to ask me questions at the moment. Please try again later."
         return render_template("index.html", result=result, query=query)
     else:
         return render_template("index.html")

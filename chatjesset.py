@@ -28,8 +28,8 @@ def semantic_search(query_embedding, embeddings):
     return ranked_indices
 
 
-def answer_question(chunk, question, model="gpt-3.5-turbo", max_tokens=300, temperature=0.7):
-    prompt = f"Use the following pieces of context to answer the question at the end: {chunk}\nQuestion: {question}. {context_prompt}. \nAnswer:"
+def answer_question(chunk, question, model="gpt-3.5-turbo", max_tokens=300, temperature=0.8):
+    prompt = f"Use the following context to answer the question at the end.\nContext: {chunk}\nQuestion: {question}. {context_prompt}."
     response = openai.ChatCompletion.create(
         model=model,
         messages=[{"role": "system", "content": system_prompt}, {"role": "user", "content": prompt}],
@@ -40,17 +40,29 @@ def answer_question(chunk, question, model="gpt-3.5-turbo", max_tokens=300, temp
     return response["choices"][0]["message"]["content"]
 
 
+# Cache data in memory to avoid loading from GCS on every request
+data_cache = {}
+
+
 def load_csv_file_from_gcs(bucket_name, file_name):
+    if file_name in data_cache:
+        return data_cache[file_name]
     gcs_path = f"gs://{bucket_name}/{file_name}"
-    return pd.read_csv(gcs_path)
+    data = pd.read_csv(gcs_path)
+    data_cache[file_name] = data
+    return data
 
 
 def load_npy_file_from_gcs(bucket_name, file_name):
+    if file_name in data_cache:
+        return data_cache[file_name]
     bucket = storage_client.get_bucket(bucket_name)
     blob = bucket.blob(file_name)
     npy_string = blob.download_as_bytes()
     npy_file = io.BytesIO(npy_string)
-    return np.load(npy_file)
+    data = np.load(npy_file)
+    data_cache[file_name] = data
+    return data
 
 
 def run(query):
