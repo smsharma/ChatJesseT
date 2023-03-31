@@ -8,7 +8,7 @@ from google.cloud import storage
 import io
 from utils.embedding_utils import get_embedding
 
-n_relevant_chunks = 3
+n_relevant_chunks = 2
 
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 storage_client = storage.Client()
@@ -28,7 +28,7 @@ def semantic_search(query_embedding, embeddings):
     return ranked_indices
 
 
-def answer_question(chunk, question, model="gpt-3.5-turbo", max_tokens=300, temperature=0.8):
+def answer_question(chunk, question, model="gpt-3.5-turbo", max_tokens=300, temperature=0.6):
     prompt = f"Use the following context to answer the question at the end.\nContext: {chunk}\nQuestion: {question}. {context_prompt}."
     response = openai.ChatCompletion.create(
         model=model,
