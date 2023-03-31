@@ -28,7 +28,7 @@ def semantic_search(query_embedding, embeddings):
     return ranked_indices
 
 
-def answer_question(chunk, question, model="gpt-3.5-turbo", max_tokens=300, temperature=0.6):
+def answer_question(chunk, question, model="gpt-3.5-turbo", max_tokens=300, temperature=0.7):
     prompt = f"Use the following context to answer the question at the end.\nContext: {chunk}\nQuestion: {question}. {context_prompt}."
     response = openai.ChatCompletion.create(
         model=model,
