@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 
 
 def scrape_website_text(url):
+    """Scrape the text contents of a website."""
     try:
         response = requests.get(url)
         response.raise_for_status()

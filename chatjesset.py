@@ -7,10 +7,9 @@ import csv
 from google.cloud import storage
 import io
 from utils.embedding_utils import get_embedding
+from tenacity import retry, stop_after_attempt, wait_random_exponential
 
-n_relevant_chunks = 2
-
-openai.api_key = os.environ.get("OPENAI_API_KEY")
+n_relevant_chunks = 3
 storage_client = storage.Client()
 
 with open("./data/db/system_prompt.txt") as f:
@@ -18,19 +17,31 @@ with open("./data/db/system_prompt.txt") as f:
     system_prompt = " ".join(line.rstrip() for line in f)
 
 with open("./data/db/context_prompt.txt") as f:
+    """Load context prompt."""
     context_prompt = " ".join(line.rstrip() for line in f)
 
 
 def semantic_search(query_embedding, embeddings):
-    """Load context prompt."""
+    """Indices of embeddings ranked by similarity to query embedding."""
     similarities = cosine_similarity([query_embedding], embeddings)[0]
     ranked_indices = np.argsort(-similarities)
     return ranked_indices
 
 
-def answer_question(chunk, question, model="gpt-3.5-turbo", max_tokens=300, temperature=0.7):
-    prompt = f"Use the following context to answer the question at the end.\nContext: {chunk}\nQuestion: {question}. {context_prompt}."
-    response = openai.ChatCompletion.create(
+@retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
+def completion_with_backoff(**kwargs):
+    return openai.ChatCompletion.create(**kwargs)
+
+
+def answer_question(chunk, question, api_key=None, model="gpt-3.5-turbo", max_tokens=300, temperature=0.7):
+
+    if api_key is None:  # Use system API key
+        openai.api_key = os.environ.get("OPENAI_API_KEY")
+    else:
+        openai.api_key = api_key
+
+    prompt = f"Use the following context to answer the question at the end.\nContext: {chunk}.\n{context_prompt}\nQuestion: {question}"
+    response = completion_with_backoff(
         model=model,
         messages=[{"role": "system", "content": system_prompt}, {"role": "user", "content": prompt}],
         max_tokens=max_tokens,
@@ -65,17 +76,23 @@ def load_npy_file_from_gcs(bucket_name, file_name):
     return data
 
 
-def run(query):
+def run(query, api_key=None):
     if not query:
         return "Please enter your question above, and I'll do my best to help you."
     if len(query) > 150:
         return "Please ask a shorter question!"
     else:
-        df_text = load_csv_file_from_gcs("chatjesset.appspot.com", "text_chunks.csv")
-        embeddings = load_npy_file_from_gcs("chatjesset.appspot.com", "embeddings.npy")
-        query_embedding = get_embedding(query)
+        # # Load remote files
+        # embeddings = load_npy_file_from_gcs("chatjesset.appspot.com", "embeddings.npy")
+        # df_text = load_csv_file_from_gcs("chatjesset.appspot.com", "text_chunks.csv")
+
+        # Load local files
+        df_text = pd.read_csv("data/db/text_chunks.csv")
+        embeddings = np.load("data/db/embeddings.npy")
+
+        query_embedding = get_embedding(query, api_key=api_key)
         ranked_indices = semantic_search(np.array(query_embedding), embeddings)
         most_relevant_chunk = " ".join(df_text.loc[ranked_indices[:n_relevant_chunks], "text_chunks"].values.flatten())
-        answer = answer_question(most_relevant_chunk, query)
+        answer = answer_question(most_relevant_chunk, query, api_key)
         answer.strip("\n")
         return answer

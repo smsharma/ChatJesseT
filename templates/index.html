@@ -108,13 +108,13 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>
-            <a href="{{ url_for('home') }}">ChatJesseT</a>
-        </h1>
-        <p>Type your question below.
-        </p>
-        <form method="POST" class="query-box">
+    <form method="POST" class="query-box">
+        <div class="container">
+            <h1>
+                <a href="{{ url_for('home') }}">ChatJesseT</a>
+            </h1>
+            <p>Type your question below.
+            </p>
             <div class="form-group">
                 <div class="input-group">
                     <input type="text" name="query" id="query" class="form-control" autocomplete="off">
@@ -123,33 +123,43 @@
                     </div>
                 </div>
             </div>
-        </form>
-        <div id="result">
-            <img src="{{ url_for('static', filename='jessminator.png') }}">
-            <div id="loading-indicator" style="display: none;">
-                <img src="static/energyflowanimation.gif" alt="Thinking..." width="100">
+            <div id="result">
+                <img src="{{ url_for('static', filename='jessminator.png') }}">
+                <div id="loading-indicator" style="display: none;">
+                    <img src="static/energyflowanimation.gif" alt="Thinking..." width="100">
+                </div>
+                <div>
+                    {% if result %}
+                    <p><span class="query">Question:</span><em>{{ query }}</em></p>
+                    <p>{{ result | safe }}</p>
+                    {% else %}
+                    <p>Welcome to ChatJesseT! <br> Please enter your question above, and I'll do my best to answer it.
+                    </p>
+                    {% endif %}
+                </div>
             </div>
-            <div>
-                {% if result %}
-                <p><span class="query">Question:</span><em>{{ query }}</em></p>
-                <p>{{ result | safe }}</p>
-                {% else %}
-                <p>Welcome to ChatJesseT! <br> Please enter your question above, and I'll do my best to answer it.</p>
+            <div class="api-key-form">
+                {% if show_api_key_box %}
+
+                <div class="form-group">
+                    <input type="text" name="api_key" id="api_key" class="form-control" autocomplete="off"
+                        placeholder="OpenAI API Key">
+                </div>
                 {% endif %}
             </div>
+            <footer style="font-size: 0.7em;">
+                &copy; 2023. (Un)Official <a href="https://iaifi.org/" target="_blank">IAIFI</a> product. No NSF funds
+                were
+                harmed in
+                the development of ChatJesseT.
+                <br> <em>Disclaimer:</em> The output of ChatJesseT is produced by giant inscrutable matrices and
+                does not
+                reflect
+                the opinions of the real Jesse Thaler.
+                <!-- With apologies to Jesse Thaler. -->
+            </footer>
         </div>
-        <footer style="font-size: 0.7em;">
-            &copy; 2023. (Un)Official <a href="https://iaifi.org/" target="_blank">IAIFI</a> product. No NSF funds
-            were
-            harmed in
-            the development of ChatJesseT.
-            <br> <em>Disclaimer:</em> The output of ChatJesseT is produced by giant inscrutable matrices and
-            does not
-            reflect
-            the opinions of the real Jesse Thaler.
-            <!-- With apologies to Jesse Thaler. -->
-        </footer>
-    </div>
+    </form>
     <script>
         const form = document.querySelector('.query-box');
         const submitButton = document.querySelector('#submit-button');

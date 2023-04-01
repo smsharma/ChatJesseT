@@ -1,9 +1,6 @@
-import pandas as pd
-import numpy as np
-from tqdm import tqdm
-from tenacity import retry, stop_after_attempt, wait_random_exponential
 import os
 
+from tenacity import retry, stop_after_attempt, wait_random_exponential
 import openai
 
 
@@ -21,7 +18,10 @@ def embedding_with_backoff(**kwargs):
     return openai.Embedding.create(**kwargs)
 
 
-def get_embedding(text, model="text-embedding-ada-002"):
-    openai.api_key = os.environ.get("OPENAI_API_KEY")
+def get_embedding(text, model="text-embedding-ada-002", api_key=None):
+    if api_key is None:
+        openai.api_key = os.environ.get("OPENAI_API_KEY")
+    else:
+        openai.api_key = api_key
     text = text.replace("\n", " ")
     return embedding_with_backoff(input=[text], model=model)["data"][0]["embedding"]
