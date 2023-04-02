@@ -33,7 +33,7 @@ def completion_with_backoff(**kwargs):
     return openai.ChatCompletion.create(**kwargs)
 
 
-def answer_question(chunk, question, api_key=None, model="gpt-3.5-turbo", max_tokens=300, temperature=0.7):
+def answer_question(chunk, question, api_key=None, model="gpt-3.5-turbo", max_tokens=300, temperature=0.25):
 
     if api_key is None:  # Use system API key
         openai.api_key = os.environ.get("OPENAI_API_KEY")
