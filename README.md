@@ -1,6 +1,6 @@
 # [ChatJesseT](https://chatjesset.com/)
 
-Created for April Fools' 2023 as a Flask app using OpenAI embeddings and chat completion. With apologies to [Jesse Thaler](https://jthaler.net/).
+Created for April Fools' 2023 as a Flask app using OpenAI embeddings and chat completion. Uses the `gpt-3.5-turbo` model by default. With apologies to [Jesse Thaler](https://jthaler.net/).
 
 ![Screenshot of deployed website.](static/cjt_1.png)
 
@@ -41,3 +41,7 @@ and navigate to the remote URL via
 ```
 gcloud app browse
 ```
+
+## Credit
+
+Rikab Gambhir and Cari Cesarotti for prompt engineering. Loading animation from [EnergyFlow](https://energyflow.network/examples/#animation_examplepy).
