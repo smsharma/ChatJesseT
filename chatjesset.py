@@ -30,14 +30,16 @@ def semantic_search(query_embedding, embeddings):
 
 @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
 def completion_with_backoff(**kwargs):
+    """Chat completion with exponential backoff to prevent rate limiting."""
     return openai.ChatCompletion.create(**kwargs)
 
 
 def answer_question(chunk, question, api_key=None, model="gpt-3.5-turbo", max_tokens=300, temperature=0.25):
+    """Return answer to query given context chunk."""
 
     if api_key is None:  # Use system API key
         openai.api_key = os.environ.get("OPENAI_API_KEY")
-    else:
+    else:  # Use user API key
         openai.api_key = api_key
 
     prompt = f"Use the following context to answer the question at the end.\nContext: {chunk}.\n{context_prompt}\nQuestion: {question}"
@@ -56,6 +58,7 @@ data_cache = {}
 
 
 def load_csv_file_from_gcs(bucket_name, file_name):
+    """Load csv file from GCS bucket into memory and return as Pandas DataFrame."""
     if file_name in data_cache:
         return data_cache[file_name]
     gcs_path = f"gs://{bucket_name}/{file_name}"
@@ -65,6 +68,7 @@ def load_csv_file_from_gcs(bucket_name, file_name):
 
 
 def load_npy_file_from_gcs(bucket_name, file_name):
+    """Load npy file from GCS bucket into memory and return as NumPy array."""
     if file_name in data_cache:
         return data_cache[file_name]
     bucket = storage_client.get_bucket(bucket_name)
@@ -77,18 +81,19 @@ def load_npy_file_from_gcs(bucket_name, file_name):
 
 
 def run(query, api_key=None):
+    """Run ChatJesseT on query and return an answer."""
     if not query:
         return "Please enter your question above, and I'll do my best to help you."
     if len(query) > 150:
         return "Please ask a shorter question!"
     else:
-        # # Load remote files
-        # embeddings = load_npy_file_from_gcs("chatjesset.appspot.com", "embeddings.npy")
-        # df_text = load_csv_file_from_gcs("chatjesset.appspot.com", "text_chunks.csv")
+        # Load remote files
+        embeddings = load_npy_file_from_gcs("chatjesset.appspot.com", "embeddings.npy")
+        df_text = load_csv_file_from_gcs("chatjesset.appspot.com", "text_chunks.csv")
 
-        # Load local files
-        df_text = pd.read_csv("data/db/text_chunks.csv")
-        embeddings = np.load("data/db/embeddings.npy")
+        # # Load local files
+        # df_text = pd.read_csv("data/db/text_chunks.csv")
+        # embeddings = np.load("data/db/embeddings.npy")
 
         query_embedding = get_embedding(query, api_key=api_key)
         ranked_indices = semantic_search(np.array(query_embedding), embeddings)
