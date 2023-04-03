@@ -17,9 +17,17 @@ export OPENAI_API_KEY="sk-xxx..."
 ```
 python main.py
 ```
-and navigate to `http://127.0.0.1:8080/`.
+and navigate to `http://127.0.0.1:8080/`. If loading text chunks and embeddings locally (rather than from cloud storage), uncomment the relevant lines in the `run()` function in [chatjesset.py](chatjesset.py).
 
-6. Deploy website through the Google App Engine with
+## Deployment 
+
+The site is deployed via Google App Engine.
+
+1. See [here](https://cloud.google.com/appengine/docs/standard/python3/runtime) and [here](https://cloud.google.com/docs/authentication/provide-credentials-adc#how-to) for preliminary steps necessary for Google Cloud / App Engine deployment. 
+
+2. Upload the text chunks and embeddings to Google Cloud for more efficient data loading; this can be done by manually uploading to the remote bucket specified in the `run()` function in [chatjesset.py](chatjesset.py). 
+
+3. Deploy website through the Google App Engine with
 ```
 gcloud app deploy
 ```
@@ -27,4 +35,3 @@ and navigate to the remote URL via
 ```
 gcloud app browse
 ```
-See [here](https://cloud.google.com/appengine/docs/standard/python3/runtime) for preliminary steps necessary for Google Cloud / App Engine deployment. For [here](https://cloud.google.com/docs/authentication/provide-credentials-adc#how-to) for initializing GOogle Cloud. Upload the text chunks and embeddings to Google Cloud for more efficient data loading; this can be done by manually uploading to the bucket specified in the `run()` function in [chatjesset.py](chatjesset.py). If loading text chunks and embeddings locally, uncomment the relevant lines in that file.
