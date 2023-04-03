@@ -159,8 +159,15 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+# Database
 data/papers
-data/db
 data/videos
 .DS_Store
+
+# Deployment file; copy in app_deploy.yaml
 app.yaml
+
+# Text chunks and embeddings
+data/db/text_chunks.csv
+data/db/df_text.csv
+data/db/embeddings.npy
