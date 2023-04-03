@@ -31,7 +31,7 @@ The site is deployed via Google App Engine (GAE).
 
 2. Upload the text chunks and embeddings to Google Cloud for more efficient data loading; this can be done by manually uploading to the remote bucket specified in the `run()` function in [chatjesset.py](chatjesset.py). If loading text chunks and embeddings locally (rather than from cloud storage), uncomment the relevant lines in the `run()` function in [chatjesset.py](chatjesset.py).
 
-3. Edit `app.yaml` with the OpenAI API Key and other GAE info, like instance types.
+3. Copy `app_deploy.yaml` to `app.yaml` and edit with the OpenAI API Key and other GAE info, like instance types.
 
 3. Deploy website through the Google App Engine with
 ```
