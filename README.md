@@ -1,6 +1,6 @@
 # [ChatJesseT](https://chatjesset.com/)
 
-Created for April Fools' 2023 as a Flask app using OpenAI embeddings and chat completion. With apologies to Jesse Thaler.
+Created for April Fools' 2023 as a Flask app using OpenAI embeddings and chat completion. With apologies to [Jesse Thaler](https://jthaler.net/).
 
 ![Screenshot of deployed website.](static/cjt_1.png)
 
