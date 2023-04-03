@@ -162,4 +162,5 @@ cython_debug/
 data/papers
 data/db
 data/videos
-.DS_Storeapp.yaml
+.DS_Store
+app.yaml
