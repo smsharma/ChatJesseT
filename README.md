@@ -1,23 +1,23 @@
-# ChatJesseT
+# [ChatJesseT](https://chatjesset.com/)
 
-Created for April Fools' 2023 using OpenAI embeddings and chat completion. With apologies to Jesse Thaler.
+Created for April Fools' 2023 as a Flask app using OpenAI embeddings and chat completion. With apologies to Jesse Thaler.
 
 ![Screenshot of deployed website.](static/cjt_1.png)
 
 ## Setup
 
-1. `requirements_test.txt` contains the full python environment used for development and testing. `requirements.txt` contains the more minimal version for deploying the Flask app. Set up a Python environment accordingly.
+1. `requirements_test.txt` contains the full Python environment used for development and testing. `requirements.txt` contains the more minimal version for deploying the Flask app. Set up an environment accordingly.
 
 2. Set the OpenAI key (for embedding and chat completion calls):
 ```
 export OPENAI_API_KEY="sk-xxx..."
 ```
 
-3. Set a system prompt at `data/db/system_prompt.txt` and a context prompt at `data/db/context_prompt.txt`. The former will guide the general characteristics of the chatbot, while the later will give a stronger immediate signal.
+1. Set a system prompt at `data/db/system_prompt.txt` and a context prompt at `data/db/context_prompt.txt`. The former will guide the general characteristics of the chatbot, while the later will give a stronger immediate signal.
 
-4. To create text chunks and embeddings, run [`notebooks/01_data_collection.ipynb`](notebooks/01_data_collection.ipynb) and [`notebooks/02_embedding.ipynb`](notebooks/02_embedding.ipynb).
+2. To create text chunks and embeddings, run [`notebooks/01_data_collection.ipynb`](notebooks/01_data_collection.ipynb) and [`notebooks/02_embedding.ipynb`](notebooks/02_embedding.ipynb).
 
-5. For local testing, simply do
+3. For local testing, simply do
 ```
 python main.py
 ```
