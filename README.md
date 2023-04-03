@@ -1,6 +1,10 @@
 # ChatJesseT
 
-## Usage
+Created for April Fools' 2023 using OpenAI embeddings and chat completion. With apologies to Jesse Thaler.
+
+![Screenshot of deployed website.](static/cjt_1.png)
+
+## Setup
 
 1. `requirements_test.txt` contains the full python environment used for development and testing. `requirements.txt` contains the more minimal version for deploying the Flask app. Set up a Python environment accordingly.
 
@@ -21,11 +25,13 @@ and navigate to `http://127.0.0.1:8080/`. If loading text chunks and embeddings 
 
 ## Deployment 
 
-The site is deployed via Google App Engine.
+The site is deployed via Google App Engine (GAE).
 
 1. See [here](https://cloud.google.com/appengine/docs/standard/python3/runtime) and [here](https://cloud.google.com/docs/authentication/provide-credentials-adc#how-to) for preliminary steps necessary for Google Cloud / App Engine deployment. 
 
-2. Upload the text chunks and embeddings to Google Cloud for more efficient data loading; this can be done by manually uploading to the remote bucket specified in the `run()` function in [chatjesset.py](chatjesset.py). 
+2. Upload the text chunks and embeddings to Google Cloud for more efficient data loading; this can be done by manually uploading to the remote bucket specified in the `run()` function in [chatjesset.py](chatjesset.py). If loading text chunks and embeddings locally (rather than from cloud storage), uncomment the relevant lines in the `run()` function in [chatjesset.py](chatjesset.py).
+
+3. Edit `app.yaml` with the OpenAI API Key and other GAE info, like instance types.
 
 3. Deploy website through the Google App Engine with
 ```
