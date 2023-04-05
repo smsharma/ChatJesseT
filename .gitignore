@@ -171,3 +171,7 @@ app.yaml
 data/db/text_chunks.csv
 data/db/df_text.csv
 data/db/embeddings.npy
+
+# Prompts
+data/db/system_prompt.txt
+data/db/context_prompt.txt
