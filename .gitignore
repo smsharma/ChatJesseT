@@ -175,3 +175,4 @@ data/db/embeddings.npy
 # Prompts
 data/db/system_prompt.txt
 data/db/context_prompt.txt
+data/db/*prompt.txt
