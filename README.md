@@ -13,15 +13,15 @@ Created for April Fools' 2023 as a Flask app using OpenAI embeddings and chat co
 export OPENAI_API_KEY="sk-xxx..."
 ```
 
-1. Set a system prompt at `data/db/system_prompt.txt` and a context 
+3. Set a system prompt at `data/db/system_prompt.txt` and a context 
 prompt at `data/db/context_prompt.txt`. The former will guide the general 
 characteristics of the chatbot, while the later will give a stronger 
 immediate signal. These are hidden from the repo for now for comedic 
 purposes.
 
-2. To create text chunks and embeddings, run [`notebooks/01_data_collection.ipynb`](notebooks/01_data_collection.ipynb) and [`notebooks/02_embedding.ipynb`](notebooks/02_embedding.ipynb).
+4. To create text chunks and embeddings, run [`notebooks/01_data_collection.ipynb`](notebooks/01_data_collection.ipynb) and [`notebooks/02_embedding.ipynb`](notebooks/02_embedding.ipynb).
 
-3. For local testing, simply do
+5. For local testing, simply do
 ```
 python main.py
 ```
@@ -37,7 +37,7 @@ The site is deployed via Google App Engine (GAE).
 
 3. Copy `app_deploy.yaml` to `app.yaml` and edit with the OpenAI API Key and other GAE info, like instance types.
 
-3. Deploy website through the Google App Engine with
+4. Deploy website through the Google App Engine with
 ```
 gcloud app deploy
 ```
