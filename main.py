@@ -29,15 +29,21 @@ def index():
                     result = f"Please enter your OpenAI API Key!"
                 elif api_key != "":  # If API key provided in user mode; use it
                     result = run(query, api_key=api_key)
-            elif api_key_mode == "system":  # API key is not required in system mode; use system key
+            elif (
+                api_key_mode == "system"
+            ):  # API key is not required in system mode; use system key
                 api_key = None
-                result = run(query, api_key=api_key)
                 logger.info(f"User input: {query}")  # Using logger
+                result = run(query, api_key=api_key)
             else:
-                raise NotImplementedError("Please set api_key_mode to either 'user' or 'system'.")
+                raise NotImplementedError(
+                    "Please set api_key_mode to either 'user' or 'system'."
+                )
         except Exception as e:
             result = f"Whoops something didn't quite work! Perhaps too many people are trying to ask me questions at the moment. Please try again later."
-        return render_template("index.html", result=result, query=query, show_api_key_box=SHOW_API_KEY_BOX)
+        return render_template(
+            "index.html", result=result, query=query, show_api_key_box=SHOW_API_KEY_BOX
+        )
     else:
         return render_template("index.html", show_api_key_box=SHOW_API_KEY_BOX)
 

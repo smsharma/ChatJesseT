@@ -1,7 +1,9 @@
 import os
 
 from tenacity import retry, stop_after_attempt, wait_random_exponential
-import openai
+from openai import OpenAI
+
+client = OpenAI()
 
 
 def sliding_window(text, window_size, stride):
@@ -15,13 +17,13 @@ def sliding_window(text, window_size, stride):
 
 @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
 def embedding_with_backoff(**kwargs):
-    return openai.Embedding.create(**kwargs)
+    return client.embeddings.create(**kwargs)
 
 
 def get_embedding(text, model="text-embedding-ada-002", api_key=None):
-    if api_key is None:
-        openai.api_key = os.environ.get("OPENAI_API_KEY")
-    else:
-        openai.api_key = api_key
+    # if api_key is None:
+    #     openai.api_key = os.environ.get("OPENAI_API_KEY")
+    # else:
+    #     openai.api_key = api_key
     text = text.replace("\n", " ")
-    return embedding_with_backoff(input=[text], model=model)["data"][0]["embedding"]
+    return embedding_with_backoff(input=[text], model=model).data[0].embedding
