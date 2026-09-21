@@ -1,0 +1,53 @@
+From jthaler.net/engagement, September 2026.
+Public Engagement - Jesse Thaler
+Public Engagement
+Public Talks
+Advocacy
+Essays
+Strategic Planning
+I engage with the public through classroom visits, opinion pieces, and lively presentations related to my research. I also advocate for the importance of open access to scientific data, and participate in strategic planning for the AI/ML and particle physics communities.
+Engagement CV
+Public Talks
+“Predictably Uncertain: Academic Publishing in the Era of AI“,
+Virtual Salon, Annual Reviews, March 2026
+“AI for Physics Discovery“,
+Discovery Engines (with Nabil Laoudji), August 2025
+“Physics, AI, and the Future of Discovery“ (with France Córdova, Walter Copan, Valerie Browning, and Evgeni Gousev),
+AIP Foundation, April 2024
+“Predictably Uncertain: A Physicist’s Perspective on AI Policy“,
+Off the Record Foreign Policy Association Lecture, New York City Bar Association, March 2024
+“Collision Course: Artificial Intelligence meets Fundamental Physics“,
+Keynote Presentation, Tommy Flowers Network Conference, Virtual, October 2020
+“Confronting the Invisible Universe“,
+Public Talk, Aspen Center for Physics, March 2017
+“The Higgs Boson: Triumph of the Standard Model“,
+24th Annual Kavli Frontiers of Science, National Academy of Sciences, U.C. Irvine, November 2012
+Advocacy
+“Inside the wild experiments physicists would do with zero limits: A muon collider“,
+New Scientist, December 2025
+“Transcript of Physics, AI, and the Future of Discovery“ (with France Córdova, Walter Copan, Valerie Browning, and Evgeni Gousev),
+Physics Today 77(11):30 (2024)
+“Expanding the Space of Machine Learning for Physics“,
+APS Topical Group on Data Science Newsletter, Winter 2023
+“Designing an AI Physicist“,
+Opinion Viewpoint, CERN Courier, September 2021
+“Slow and Steady“ (with Matthew Strassler),
+Correspondence, Nature Physics 15:725 (2019)
+“The Future of Particle Physics is ‘Open’“,
+Guest Blog Post, The Cylindrical Onion, CMS Experiment, December 2017
+Essays
+“Institute for Artificial Intelligence and Fundamental Interactions (IAIFI): Infusing physics intelligence into artificial intelligence“ (with Mike Williams and Marisa LaFleur),
+AI Magazine, February 2024
+“Deep Learning + Deep Thinking = Deeper Understanding“ (with Mike Williams),
+Physics@MIT Journal, Fall 2023
+“Listening for Dark Matter from the Basement of Building 24“ (with Lindley Winslow),
+Physics@MIT Journal, Fall 2019
+“Guest Case Study 6: Particle Collisions“ (with Felice Frankel),
+Picturing Science and Engineering, MIT Press, 2018
+Strategic Planning
+“The Future of Artificial Intelligence and the Mathematical and Physical Sciences (AI+MPS)“,
+Report from a National Science Foundation Workshop, September 2025
+“Exploring the Quantum Universe: Pathways to Innovation and Discovery in Particle Physics“,
+Report of the Particle Physics Project Prioritization Panel (P5), December 2023
+“Snowmass Theory Frontier: Collider Phenomenology (TF07)“ (with Fabio Maltoni and Shufang Su),
+Report for the US Community Study on the Future of Particle Physics, October 2022

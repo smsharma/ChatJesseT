@@ -1,4 +1,38 @@
-Jesse Thaler is a theoretical particle physicist who fuses techniques from quantum field theory and machine learning to address outstanding questions in fundamental physics.  His current research is focused on maximizing the discovery potential of the Large Hadron Collider (LHC) through new theoretical frameworks and novel data analysis techniques.  Prof. Thaler is an expert in jets, which are collimated sprays of particles that are copiously produced at the LHC, and he studies the substructure of jets to enhance the search for new phenomena and illuminate the dynamics of gauge theories.  He is also interested in new strategies to probe the nature of dark matter at the LHC and beyond, as well as in the theoretical structures and experimental signatures of supersymmetry.
+Jesse Thaler is a theoretical particle physicist who fuses techniques from quantum field theory and machine learning to address outstanding questions in fundamental physics. His current research is focused on maximizing the discovery potential of the Large Hadron Collider (LHC) through new theoretical frameworks and novel data analysis techniques. Prof. Thaler is an expert in jets, which are collimated sprays of particles that are copiously produced at the LHC, and he studies the substructure of jets to enhance the search for new phenomena and illuminate the dynamics of gauge theories. He is also interested in new strategies to probe the nature of dark matter at the LHC and beyond, as well as in the theoretical structures and experimental signatures of supersymmetry.
 
-Jesse Thaler joined the MIT Physics Department in 2010, and is currently a Professor in the Center for Theoretical Physics.  From 2006 to 2009, he was a fellow at the Miller Institute for Basic Research in Science at the University of California, Berkeley.  He received his Ph.D. in Physics from Harvard University in 2006, and his Sc.B. in Math/Physics from Brown University in 2002.   In 2020, Prof. Thaler became the inaugural Director of the NSF AI Institute for Artificial Intelligence and Fundamental Interactions.
+Jesse Thaler joined the MIT Physics Department in 2010, and is currently a Professor in the MIT Center for Theoretical Physics - a Leinweber Institute. From 2006 to 2009, he was a fellow at the Miller Institute for Basic Research in Science at the University of California, Berkeley. He received his Ph.D. in Physics from Harvard University in 2006, and his Sc.B. in Math/Physics from Brown University in 2002. From 2020 to 2025, Prof. Thaler was the inaugural Director of the NSF Institute for Artificial Intelligence and Fundamental Interactions. As of 2026, he directs the MIT Laboratory for Nuclear Science.
 
+Key Positions
+Massachusetts Institute of Technology
+William and Emma Rogers Professor, 2026-Present
+Professor of Physics, 2021-Present
+Associate Professor of Physics, 2015-2021 (tenured in 2017)
+Assistant Professor of Physics, 2010-2015
+MIT Laboratory for Nuclear Science
+Director, 2026-Present
+NSF Institute for Artificial Intelligence and Fundamental Interactions
+Director, 2020-2025
+University of California, Berkeley
+Miller Research Fellow, 2006-2009
+Education
+Harvard University, Ph.D. Physics, 2006
+Brown University, Sc.B. Math/Physics, 2002
+Selected Awards
+Humboldt Research Award, Alexander von Humboldt Foundation, 2026
+Schlumberger Chair for Mathematical Sciences, Institut des Hautes Études Scientifiques, 2025-2026
+APS Fellow, American Physical Society, 2022
+Simons Investigator in Physics, Simons Foundation, 2022-2027
+Harold E. Edgerton Faculty Achievement Award, MIT, 2016
+Sloan Research Fellowship, Alfred P. Sloan Foundation, 2013
+Presidential Early Career Award for Scientists and Engineers, White House, 2012
+Early Career Research Award, U.S. Department of Energy, Office of Science, 2011-2016
+
+Extended informal biography, in Jesse's own words:
+Though I was born in Minneapolis, Minnesota, I spent my formative years in York, Maine. My brother, Aaron, and I used to play all sorts of fun games including “wig” which nearly resulted in vital organ loss. I survived through York Middle School despite soldered glasses, a bad hair cut, and one-on-one math tutorials in a janitor’s closet. My success was partly due to a love affair with a tenor saxophone.
+I went to high school at Phillips Exeter Academy. It was there that I developed my radio personality, Lester Johnson, on 90.5 FM WPEA. I also learned how to rock out on the electric bass through a spiritual encounter with the band/fruit juice known as Nedlog. Oh, and I happened to meet a fine looking Russian-Cuban in a class on Zen Buddhism.
+In 2002, I received an Sc.B. in Math/Physics from Brown University. At Brown, I was heavily involved with an upright bass named Else, until I was sucked into an eight-piece 70s funk band named DLicks. Lester spent a few too many hours doing late-night freeform radio at 95.5 WBRU. It was fun while it lasted… my/his sanity, that is.
+Now I am engaged in an equally brain warping activity: theoretical physics. I received my Ph.D. in high energy theory at Harvard University, working with Nima Arkani-Hamed to elucidate some of the deep mysteries of the universe.
+I then spent a glorious three-and-a-half years in California, doing post-doctorial research as a Miller Fellow at UC Berkeley and LBNL. Sasha and I tied the knot in 2007, and we’ve been enjoying married life ever since, testing the laws of gravity at every opportunity.
+Alas, our time on the left coast was short-lived, and Sasha and I moved (back) to New England in 2010. I am now living the (academic) dream as a Professor in the Center for Theoretical Physics at MIT. In my research, I attempt to address some of the outstanding questions in fundamental physics, including the nature of dark matter, the apparent weakness of gravity, and the symmetry structure of our universe.
+In 2020, I become Director of the NSF Institute for Artificial Intelligence and Fundamental Interactions. I used to make jokes about how “deep learning” could never compete with “deep thinking”, but I guess now the joke’s on me.
+Starting August 2026, I will start a new adventure as Director of the MIT Laboratory for Nuclear Science (LNS). Why would a tenured professor agree to take on this kind of adminstrative role? Because discovery science is very much a team sport.

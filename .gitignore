@@ -176,3 +176,6 @@ data/db/embeddings.npy
 data/db/system_prompt.txt
 data/db/context_prompt.txt
 data/db/*prompt.txt
+
+# Local backup of the 2023 database and prompts
+data/db_backup_2023/

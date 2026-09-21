@@ -1,0 +1,375 @@
+From jthaler.net/research, September 2026.
+Research in Theoretical Physics - Jesse Thaler
+Research in Theoretical Physics
+Data Science and AI/ML
+Collider Physics and QCD
+Beyond the Standard Model
+The goal of my research in theoretical particle physics is to galvanize the search for new phenomena beyond the Standard Model as well as to illuminate the structure of the Standard Model itself. My work often combines first-principles calculations in quantum field theory with data analysis techniques from machine learning.
+Papers by Year
+Inspire
+arXiv
+ORCID
+Google Scholar
+Data Science and AI/ML
+Machine learning has impacted many scientific fields, and particle physics is no exception. In my research, I aim to enhance the search for new phenomena at colliders by merging the performance of deep learning algorithms with the robustness of “deep thinking” approaches.
+Selected Papers
+QCD Theory Meets Information Theory
+Benoît Assi, Stefan Höche, Kyle Lee, and Jesse Thaler, PRL 2025
+SHAPER: Can You Hear the Shape of a Jet?
+Demba Ba, Akshunna S. Dogra, Rikab Gambhir, Abiy Tasissa, and Jesse Thaler, JHEP 2023
+Analyzing N-point Energy Correlators Inside Jets with CMS Open Data
+Patrick T. Komiske, Ian Moult, Jesse Thaler, and Hua Xing Zhu, PRL 2023
+The Metric Space of Collider Events
+Patrick T. Komiske, Eric M. Metodiev, and Jesse Thaler, PRL 2019
+Energy Flow Networks: Deep Sets for Particle Jets
+Patrick T. Komiske, Eric M. Metodiev, and Jesse Thaler, JHEP 2019
+On the Topic of Jets: Disentangling Quarks and Gluons at Colliders
+Eric M. Metodiev and Jesse Thaler, PRL 2018
+Exposing the QCD Splitting Function with CMS Open Data
+Andrew Larkoski, Simone Marzani, Jesse Thaler, Aashish Tripathee, and Wei Xue, PRL 2017
+Research Topics
+AI+Science Advocacy and Perspectives
+Interpreting ‘Interpretability’ and Explaining ‘Explainability’ in Machine Learning in Physics
+Rikab Gambhir, Luisa Lucie-Smith, and Jesse Thaler, arXiv 2026
+The Future of Artificial Intelligence and the Mathematical and Physical Sciences (AI+MPS) recommended
+Andrew Ferguson, Marisa LaFleur, Lars Ruthotto, Jesse Thaler, Yuan-Sen Ting, Pratyush Tiwary, Soledad Villar, et al., MLST 2026
+Optimization
+Sven: Singular Value Descent as a Computationally Efficient Natural Gradient Method
+Samuel Bright-Thonney, Thomas R. Harvey, Andre Lukas, and Jesse Thaler, arXiv 2026
+Descending into the Modular Bootstrap
+Nathan Benjamin, A. Liam Fitzpatrick, Wei Li, and Jesse Thaler, JHEP 2026
+Event Generation and Unfolding
+Reweighting Adversarial Networks for Unbinned Unfolding
+Umar Sohail Qureshi, Krish Desai, Jesse Thaler, and Benjamin Nachman, arXiv 2026
+Improving Parton Shower Predictions via Precision Moments of Energy Flow Polynomials
+Benoît Assi, Kyle Lee, and Jesse Thaler, JHEP 2026
+QCD Theory Meets Information Theory recommended
+Benoît Assi, Stefan Höche, Kyle Lee, and Jesse Thaler, PRL 2025
+Moment Unfolding
+Krish Desai, Benjamin Nachman, and Jesse Thaler, PRD 2024
+Neural Conditional Reweighting
+Benjamin Nachman and Jesse Thaler, PRD 2022
+Neural Resampler for Monte Carlo Reweighting with Preserved Uncertainties
+Benjamin Nachman and Jesse Thaler, PRD 2020
+OmniFold: A Method to Simultaneously Unfold All Observables recommended
+Anders Andreassen, Patrick T. Komiske, Eric M. Metodiev, Benjamin Nachman, and Jesse Thaler, PRL 2020
+Uncertainties and Calibration
+The Well-Tempered Likelihood: Honest Confidence Intervals for Misspecified Models
+Benjamin Nachman and Jesse Thaler, arXiv 2026
+Many Wrongs Make a Right: Leveraging Biased Simulations Towards Unbiased Parameter Inference
+Ezequiel Alvarez, Sean Benevedes, Manuel Szewc, and Jesse Thaler, arXiv 2026
+Frequentist Uncertainties on Neural Density Ratios with WiFi Ensembles
+Sean Benevedes and Jesse Thaler, PRD 2025
+Bias and Priors in Machine Learning Calibrations for High Energy Physics
+Rikab Gambhir, Benjamin Nachman, and Jesse Thaler, PRD 2022
+Learning Uncertainties the Frequentist Way: Calibration and Correlation in High Energy Physics recommended
+Rikab Gambhir, Benjamin Nachman, and Jesse Thaler, PRL 2022
+Optimal Transport
+SPECTER: Efficient Evaluation of the Spectral EMD
+Rikab Gambhir, Andrew J. Larkoski, and Jesse Thaler, JHEP 2024
+A Spectral Metric for Collider Geometry
+Andrew J. Larkoski and Jesse Thaler, JHEP 2023
+Pileup and Infrared Radiation Annihilation (PIRANHA): A Paradigm for Continuous Jet Grooming
+Samuel Alipour-fard, Patrick T. Komiske, Eric M. Metodiev, and Jesse Thaler, JHEP 2023
+SHAPER: Can You Hear the Shape of a Jet? recommended
+Demba Ba, Akshunna S. Dogra, Rikab Gambhir, Abiy Tasissa, and Jesse Thaler, JHEP 2023
+A Robust Measure of Event Isotropy at Colliders
+Cari Cesarotti and Jesse Thaler, JHEP 2020
+The Hidden Geometry of Particle Collisions
+Patrick T. Komiske, Eric M. Metodiev, and Jesse Thaler, JHEP 2020
+The Metric Space of Collider Events recommended
+Patrick T. Komiske, Eric M. Metodiev, and Jesse Thaler, PRL 2019
+Point Cloud Learning
+A Lorentz-Equivariant Transformer for All of the LHC
+Johann Brehmer, Víctor Bresó, Pim de Haan, Tilman Plehn, Huilin Qu, Jonas Spinner, and Jesse Thaler, SciPost 2025
+Lorentz-Equivariant Geometric Algebra Transformers for High-Energy Physics recommended
+Jonas Spinner, Victor Bresó, Pim de Haan, Tilman Plehn, Jesse Thaler, and Johann Brehmer, NeurIPS 2024
+Moments of Clarity: Streamlining Latent Spaces in Machine Learning using Moment Pooling
+Rikab Gambhir, Athis Osathapan, and Jesse Thaler, PRD 2024
+Safe but Incalculable: Energy-Weighting is Not All You Need
+Samuel Bright-Thonney, Benjamin Nachman, and Jesse Thaler, PRD 2024
+EPiC-GAN: Equivariant Point Cloud Generation for Particle Jets
+Erik Buhmann, Gregor Kasieczka, and Jesse Thaler, SciPost 2023
+Comparing Point Cloud Strategies for Collider Event Classification
+Peter Onyisi, Delon Shen, and Jesse Thaler, PRD 2023
+Energy Flow Networks: Deep Sets for Particle Jets recommended
+Patrick T. Komiske, Eric M. Metodiev, and Jesse Thaler, JHEP 2019
+Weak Supervision and Interpretability
+Simplex Demixing: Disentangling Multiple Light-Flavor Jets at Colliders
+Gregorio de la Fuente and Jesse Thaler, arXiv 2026
+Anomaly Detection in Collider Physics via Factorized Observables
+Eric M. Metodiev, Jesse Thaler, and Raymond Wynne, PRD 2024
+SymmetryGAN: Symmetry Discovery with Deep Learning
+Krish Desai, Benjamin Nachman, and Jesse Thaler, PRD 2022
+E Pluribus Unum Ex Machina: Learning from Many Collider Events at Once
+Benjamin Nachman and Jesse Thaler, PRD 2021
+Mapping Machine-Learned Physics into a Human-Readable Space
+Taylor Faucett, Jesse Thaler, and Daniel Whiteson, PRD 2021
+On the Topic of Jets: Disentangling Quarks and Gluons at Colliders recommended
+Eric M. Metodiev and Jesse Thaler, PRL 2018
+Classification Without Labels: Learning from Mixed Samples in High Energy Physics recommended
+Eric M. Metodiev, Benjamin Nachman, and Jesse Thaler, JHEP 2017
+Open Data Studies
+Isolating Unisolated Upsilons with Anomaly Detection in CMS Open Data
+Rikab Gambhir, Radha Mastandrea, Benjamin Nachman, Jesse Thaler, PRL 2025
+Disentangling Quarks and Gluons with CMS Open Data recommended
+Patrick T. Komiske, Serhii Kryhin, and Jesse Thaler, PRD 2022
+Analyzing N-point Energy Correlators Inside Jets with CMS Open Data recommended
+Patrick T. Komiske, Ian Moult, Jesse Thaler, and Hua Xing Zhu, PRL 2023
+Exploring the Space of Jets with CMS Open Data
+Patrick T. Komiske, Radha Mastandrea, Eric M. Metodiev, Preksha Naik, and Jesse Thaler, PRD 2020
+Searching in CMS Open Data for Dimuon Resonances with Substantial Transverse Momentum
+Cari Cesarotti, Yotam Soreq, Matthew J. Strassler, Jesse Thaler, and Wei Xue, PRD 2019
+Jet Substructure Studies with CMS Open Data
+Aashish Tripathee, Wei Xue, Andrew Larkoski, Simone Marzani, and Jesse Thaler, PRD 2017
+Exposing the QCD Splitting Function with CMS Open Data recommended
+Andrew Larkoski, Simone Marzani, Jesse Thaler, Aashish Tripathee, and Wei Xue, PRL 2017
+Foundation Models
+PAPERCLIP: Associating Astronomical Observations and Natural Language with Multi-Modal Models
+Siddharth Mishra-Sharma, Yiding Song, and Jesse Thaler, COLM 2024
+Quantum Computation
+Flavor Patterns of Fundamental Particles from Quantum Entanglement?
+Jesse Thaler and Sokratis Trifinopoulos, PRD 2025
+Degeneracy Engineering for Classical and Quantum Annealing: A Case Study of Sparse Linear Regression in Collider Physics
+Eric R. Anschuetz, Lena Funcke, Patrick T. Komiske, Serhii Kryhin, and Jesse Thaler, PRD 2022
+Quantum Annealing for Jet Clustering with Thrust
+Andrea Delgado and Jesse Thaler, PRD 2022
+Quantum Algorithms for Jet Clustering recommended
+Annie Y. Wei, Preksha Naik, Aram W. Harrow, and Jesse Thaler, PRD 2020
+Collider Physics and QCD
+High-energy particle collisions are dominated by QCD (quantum chromodynamics), which describes fundamental interactions among quarks and gluons. My research has yielded new ways to analyze collider physics data and new ways to compute the properties of QCD.
+Selected Papers
+Non-Gaussianities in Collider Energy Flux
+Hao Chen, Ian Moult, Jesse Thaler, and Hua Xing Zhu, JHEP 2022
+An Operational Definition of Quark and Gluon Jets
+Patrick T. Komiske, Eric M. Metodiev, and Jesse Thaler, JHEP 2018
+Sudakov Safety in Perturbative QCD
+Andrew J. Larkoski, Simone Marzani, and Jesse Thaler, PRD 2015
+Soft Drop
+Andrew J. Larkoski, Simone Marzani, Gregory Soyez, and Jesse Thaler, JHEP 2014
+Identifying Boosted Objects with N-subjettiness
+Jesse Thaler and Ken Van Tilburg, JHEP 2011
+Research Topics
+Multi-Particle Correlators
+New Angles on Energy Correlators
+Samuel Alipour-fard, Ankita Budhraja, Jesse Thaler, and Wouter J. Waalewijn, PRL 2025
+Power Counting Energy Flow Polynomials
+Pedro Cal, Jesse Thaler, and Wouter J. Waalewijn, JHEP 2022
+Non-Gaussianities in Collider Energy Flux recommended
+Hao Chen, Ian Moult, Jesse Thaler, and Hua Xing Zhu, JHEP 2022
+Cutting Multiparticle Correlators Down to Size
+Patrick T. Komiske, Eric M. Metodiev, and Jesse Thaler, PRD 2020
+Energy Flow Polynomials: A Complete Linear Basis for Jet Substructure
+Patrick T. Komiske, Eric M. Metodiev, and Jesse Thaler, JHEP 2018
+New Angles on Energy Correlation Functions recommended
+Ian Moult, Lina Necib, and Jesse Thaler, JHEP 2016
+Energy Correlation Functions for Jet Substructure
+Andrew J. Larkoski, Gavin P. Salam, and Jesse Thaler, JHEP 2013
+Quark/Gluon Discrimination
+An Operational Definition of Quark and Gluon Jets recommended
+Patrick T. Komiske, Eric M. Metodiev, and Jesse Thaler, JHEP 2018
+Casimir Meets Poisson: Improved Quark/Gluon Discrimination with Counting Observables
+Christopher Frye, Andrew J. Larkoski, Jesse Thaler, and Kevin Zhou, JHEP 2017
+Systematics of Quark/Gluon Tagging
+Philippe Gras, Stefan Höche, Deepak Kar, Andrew Larkoski, Leif Lönnblad, Simon Plätzer, Andrzej Siódmok, Peter Skands, Gregory Soyez, and Jesse Thaler, JHEP 2017
+Gaining (Mutual) Information about Quark/Gluon Discrimination
+Andrew J. Larkoski, Jesse Thaler, and Wouter J. Waalewijn, JHEP 2014
+Jet Substructure for Boosted Objects
+Recursive Soft Drop
+Frédéric A. Dreyer, Lina Necib, Gregory Soyez, and Jesse Thaler, JHEP 2018
+The Importance of Calorimetry for Highly-Boosted Jet Substructure
+Evan Coleman, Marat Freytsis, Andreas Hinzmann, Meenakshi Narain, Jesse Thaler, Nhan Tran, and Caterina Vernieri, JINST 2018
+Resurrecting the Dead Cone
+Fabio Maltoni, Michele Selvaggi, and Jesse Thaler, PRD 2016
+Aspects of Jets at 100 TeV
+Andrew J. Larkoski and Jesse Thaler, PRD 2014
+Soft Drop recommended
+Andrew J. Larkoski, Simone Marzani, Gregory Soyez, and Jesse Thaler, JHEP 2014
+Maximizing Boosted Top Identification by Minimizing N-subjettiness
+Jesse Thaler and Ken Van Tilburg, JHEP 2012
+Identifying Boosted Objects with N-subjettiness recommended
+Jesse Thaler and Ken Van Tilburg, JHEP 2011
+Jet Trimming
+David Krohn, Jesse Thaler, and Lian-Tao Wang, JHEP 2010
+Strategies to Identify Boosted Tops
+Jesse Thaler and Lian-Tao Wang, JHEP 2008
+Precision Jet Physics
+Photon Isolation and Jet Substructure
+Eleanor Hall and Jesse Thaler, JHEP 2018
+Sudakov Safety in Perturbative QCD recommended
+Andrew J. Larkoski, Simone Marzani, and Jesse Thaler, PRD 2015
+The First Calculation of Fractional Jets
+Daniele Bertolini, Jesse Thaler, and Jonathan R. Walsh, JHEP 2015
+Jet Shapes with the Broadening Axis recommended
+Andrew J. Larkoski, Duff Neill, and Jesse Thaler, JHEP 2014
+Unsafe but Calculable: Ratios of Angularities in Perturbative QCD
+Andrew J. Larkoski and Jesse Thaler, JHEP 2013
+Precision Jet Substructure from Boosted Event Shapes
+Ilya Feige, Matthew D. Schwartz, Iain W. Stewart, and Jesse Thaler, PRL 2012
+Non-Perturbative Aspects of Jets
+Aspects of Track-Assisted Mass
+Benjamin T. Elder and Jesse Thaler, JHEP 2019
+Generalized Fragmentation Functions for Fractal Jet Observables
+Benjamin T. Elder, Massimiliano Procura, Jesse Thaler, Wouter J. Waalewijn, and Kevin Zhou, JHEP 2017
+Calculating Track Thrust with Track Functions
+Hsi-Ming Chang, Massimiliano Procura, Jesse Thaler, and Wouter J. Waalewijn, PRD 2013
+Calculating Track-Based Observables for the LHC recommended
+Hsi-Ming Chang, Massimiliano Procura, Jesse Thaler, and Wouter J. Waalewijn, PRL 2013
+Power Corrections to Event Shapes with Mass-Dependent Operators
+Vicent Mateu, Iain W. Stewart, and Jesse Thaler, PRD 2013
+New Jet Algorithms
+Flavoured Jets with Exact Anti-kt Kinematics and Tests of Infrared and Collinear Safety recommended
+Fabrizio Caola, Radosław Grabarczyk, Maxwell L. Hutt, Gavin P. Salam, Ludovic Scyboz, and Jesse Thaler, PRD 2023
+Disentangling Heavy Flavor at Colliders
+Philip Ilten, Nicholas L. Rodd, Jesse Thaler, and Mike Williams, PRD 2017
+Resolving Boosted Jets with XCone
+Jesse Thaler and Thomas F. Wilkason, JHEP 2015
+XCone: N-jettiness as an Exclusive Cone Jet Algorithm
+Iain W. Stewart, Frank J. Tackmann, Jesse Thaler, Christopher K. Vermilion, and Thomas F. Wilkason, JHEP 2015
+Separated at Birth: Jet Maximization, Axis Minimization, and Stable Cone Finding recommended
+Jesse Thaler, PRD 2015
+Jet Observables Without Jet Algorithms
+Daniele Bertolini, Tucker Chan, and Jesse Thaler, JHEP 2014
+Jets with Variable R
+David Krohn, Jesse Thaler, and Lian-Tao Wang, JHEP 2009
+Probing the Quark/Gluon Plasma
+Data-Driven Quark and Gluon Jet Modification in Heavy-Ion Collisions
+Jasmine Brewer, Jesse Thaler, and Andrew P. Turner, PRC 2021
+Sorting Out Quenched Jets recommended
+Jasmine Brewer, José Guilherme Milhano, and Jesse Thaler, PRL 2019
+Beyond the Standard Model
+The Standard Model has survived a half-century of precision tests, yets it leaves many unanswered questions, such as the nature of dark matter, the apparent weakness of gravity, and the symmetry structure of our Universe. In my research, I study hypothetical scenarios for physics beyond the Standard Model (BSM) and new experimental strategies to uncover evidence for new physics.
+Selected Papers
+Inclusive Dark Photon Search at LHCb
+Philip Ilten, Yotam Soreq, Jesse Thaler, Mike Williams, and Wei Xue, PRL 2016
+Broadband and Resonant Approaches to Axion Dark Matter Detection
+Yonatan Kahn, Benjamin R. Safdi, and Jesse Thaler, PRL 2016
+Flavor Mediation Delivers Natural SUSY
+Nathaniel Craig, Matthew McCullough, and Jesse Thaler, JHEP 2012
+Semi-annihilation of Dark Matter
+Francesco D’Eramo and Jesse Thaler, JHEP 2010
+Research Topics
+Detecting Axions and Dark Forces
+Searching for Axion Dark Matter with Birefringent Cavities
+Hongwan Liu, Brodi D. Elwood, Matthew Evans, and Jesse Thaler, PRD 2019
+Inclusive Dark Photon Search at LHCb recommended
+Philip Ilten, Yotam Soreq, Jesse Thaler, Mike Williams, and Wei Xue, PRL 2016
+Broadband and Resonant Approaches to Axion Dark Matter Detection recommended
+Yonatan Kahn, Benjamin R. Safdi, and Jesse Thaler, PRL 2016
+Dark Photons from Charm Mesons at LHCb
+Philip Ilten, Jesse Thaler, Mike Williams, and Wei Xue, PRD 2015
+DAEdALUS and Dark Matter Detection
+Yonatan Kahn, Gordan Krnjaic, Jesse Thaler, and Matthew Toups, PRD 2015
+Searching for an Invisible A’ Vector Boson with DarkLight
+Yonatan Kahn and Jesse Thaler, PRD 2012
+Constraining the Axion Portal with B -> K l+ l-
+Marat Freytsis, Zoltan Ligeti, and Jesse Thaler, PRD 2010
+Dark Force Detection in Low Energy e-p Collisions
+Marat Freytsis, Grigory Ovanesyan, and Jesse Thaler, JHEP 2010
+Models of Dark Matter
+Dark Matter, Shared Asymmetries, and Galactic Gamma Ray Signals
+Nayara Fonseca, Lina Necib, and Jesse Thaler, JCAP 2015
+(In)direct Detection of Boosted Dark Matter recommended
+Kaustubh Agashe, Yanou Cui, Lina Necib, and Jesse Thaler, JCAP 2014
+Multiple Gamma Lines from Semi-Annihilation
+Francesco D’Eramo, Matthew McCullough, and Jesse Thaler, JCAP 2013
+Dark Matter Assimilation into the Baryon Asymmetry
+Francesco D’Eramo, Lin Fei, and Jesse Thaler, JCAP 2012
+Dark Matter from Dynamical SUSY Breaking
+JiJi Fan, Jesse Thaler, and Lian-Tao Wang, JHEP 2010
+Semi-annihilation of Dark Matter recommended
+Francesco D’Eramo and Jesse Thaler, JHEP 2010
+Cosmic Signals from the Hidden Sector
+Jeremy Mardon, Yasunori Nomura, and Jesse Thaler, PRD 2009
+Dark Matter Signals from Cascade Annihilations
+Jeremy Mardon, Yasunori Nomura, Daniel Stolarski, and Jesse Thaler, JCAP 2009
+Dark Matter through the Axion Portal recommended
+Yasunori Nomura and Jesse Thaler, PRD 2009
+Superspace, Supergravity, and Cosmology
+Circumnavigating Collinear Superspace
+Timothy Cohen, Gilly Elor, Andrew J. Larkoski, and Jesse Thaler, JHEP 2020
+Navigating Collinear Superspace
+Timothy Cohen, Gilly Elor, Andrew J. Larkoski, and Jesse Thaler, JHEP 2020
+Cosmology with Orthogonal Nilpotent Superfields
+Sergio Ferrara, Renata Kallosh, and Jesse Thaler, PRD 2016
+The Goldstone and Goldstino of Supersymmetric Inflation recommended
+Yonatan Kahn, Daniel A. Roberts, and Jesse Thaler, JHEP 2015
+Anomaly Mediation from Unbroken Supergravity recommended
+Francesco D’Eramo, Jesse Thaler, and Zoe Thomas, JHEP 2013
+Super-Tricks for Superspace
+Daniele Bertolini, Jesse Thaler, and Zoe Thomas, TASI 2012
+The Two Faces of Anomaly Mediation
+Francesco D’Eramo, Jesse Thaler, and Zoe Thomas, JHEP 2012
+Supergravity Computations without Gravity Complications
+Clifford Cheung, Francesco D’Eramo, and Jesse Thaler, PRD 2011
+Models of Supersymmetry
+Auxiliary Gauge Mediation: A New Route to Mini-Split Supersymmetry
+Yonatan Kahn, Matthew McCullough, and Jesse Thaler, JHEP 2013
+Flavor Mediation Delivers Natural SUSY recommended
+Nathaniel Craig, Matthew McCullough, and Jesse Thaler, JHEP 2012
+The New Flavor of Higgsed Gauge Mediation
+Nathaniel Craig, Matthew McCullough, and Jesse Thaler, JHEP 2012
+Visible Supersymmetry Breaking and an Invisible Higgs
+Daniele Bertolini, Keith Rehermann, and Jesse Thaler, JHEP 2012
+A Fat Higgs with a Magnetic Personality
+Nathaniel Craig, Daniel Stolarski, and Jesse Thaler, JHEP 2011
+The Spectrum of Goldstini and Modulini
+Clifford Cheung, Francesco D’Eramo, and Jesse Thaler, JHEP 2011
+Goldstini Can Give the Higgs a Boost
+Jesse Thaler and Zoe Thomas, JHEP 2011
+A Definitive Signal of Multiple Supersymmetry Breaking
+Clifford Cheung, Jeremy Mardon, Yasunori Nomura, and Jesse Thaler, JHEP 2010
+Goldstini recommended
+Clifford Cheung, Yasunori Nomura, and Jesse Thaler, JHEP 2010
+Prospects for Mirage Mediation
+Aaron Pierce and Jesse Thaler, JHEP 2006
+Little Higgs Theories
+Locality in Theory Space
+Yonatan Kahn and Jesse Thaler, JHEP 2012
+The Bestest Little Higgs
+Martin Schmaltz, Daniel Stolarski, and Jesse Thaler, JHEP 2010
+Collective Quartics and Dangerous Singlets in Little Higgs recommended
+Martin Schmaltz and Jesse Thaler, JHEP 2009
+Little M-theory
+Hsin-Chia Cheng, Jesse Thaler, and Lian-Tao Wang, JHEP 2006
+(Reverse) Engineering Vacuum Alignment
+Clifford Cheung and Jesse Thaler, JHEP 2006
+Little Technicolor recommended
+Jesse Thaler, JHEP 2005
+The Littlest Higgs in Anti-de Sitter Space
+Jesse Thaler and Itay Yavin, JHEP 2005
+Implications of Naturalness
+Colorful Twisted Top Partners and Partnerium at the LHC
+Yevgeny Kats, Matthew McCullough, Gilad Perez, Yotam Soreq, and Jesse Thaler, JHEP 2017
+Exotic Top Partners and Little Higgs
+John Kearney, Aaron Pierce, and Jesse Thaler, JHEP 2013
+Top Partner Probes of Extended Higgs Sectors
+John Kearney, Aaron Pierce, and Jesse Thaler, JHEP 2013
+The Dark Top recommended
+David Poland and Jesse Thaler, JHEP 2008
+Probing Minimal Flavor Violation at the LHC
+Yuval Grossman, Yosef Nir, Jesse Thaler, Tomer Volansky, and Jure Zupan, PRD 2007
+Natural Dark Matter from an Unnatural Higgs Boson and New Colored Particles at the TeV Scale
+Aaron Pierce and Jesse Thaler, JHEP 2007
+Disentangling Dimension Six Operators through Di-Higgs Boson Production
+Aaron Pierce, Jesse Thaler, and Lian-Tao Wang, JHEP 2007
+The LHC Inverse Problem
+Supermodels for early LHC
+Christian W. Bauer, Zoltan Ligeti, Martin Schmaltz, Jesse Thaler, and Devin G.E. Walker, PLB 2010
+GenEvA (II): A phase space generator from a reweighted parton shower
+Christian W. Bauer, Frank J. Tackmann, and Jesse Thaler, JHEP 2008
+GenEvA (I): A new framework for event generation
+Christian W. Bauer, Frank J. Tackmann, and Jesse Thaler, JHEP 2008
+MARMOSET: The Path from LHC Data to the New Standard Model via On-Shell Effective Theories
+Nima Arkani-Hamed, Bruce Knuteson, Stephen Mrenna, Philip Schuster, Jesse Thaler, Natalia Toro, and Lian-Tao Wang, arXiv 2007
+Supersymmetry and the LHC Inverse Problem recommended
+Nima Arkani-Hamed, Gordon L. Kane, Jesse Thaler, and Lian-Tao Wang, JHEP 2006
+Gravity and Lorentz Violation
+Spontaneous Lorentz Breaking at High Energies
+Hsin-Chia Cheng, Markus A. Luty, Shinji Mukohyama, and Jesse Thaler, JHEP 2006
+Neutrino Constraints on Spontaneous Lorentz Violation
+Yuval Grossman, Can Kilic, Jesse Thaler, and Devin G. E. Walker, PRD 2005
+Universal Dynamics of Spontaneous Lorentz Violation and a New Spin-Dependent Inverse-Square Law Force recommended
+Nima Arkani-Hamed, Hsin-Chia Cheng, Markus A. Luty, and Jesse Thaler, JHEP 2005
+Dynamics of black hole formation in an exactly solvable model
+Antal Jevicki and Jesse Thaler, PRD 2002

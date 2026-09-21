@@ -21,6 +21,12 @@ purposes.
 
 4. To create text chunks and embeddings, run [`notebooks/01_data_collection.ipynb`](notebooks/01_data_collection.ipynb) and [`notebooks/02_embedding.ipynb`](notebooks/02_embedding.ipynb).
 
+   To update the database later (e.g. when Jesse gets a new job), add or edit text files in `data/interviews/` and `data/website/` and run
+```
+python -m utils.rebuild_db
+```
+   Only new or changed text chunks are re-embedded.
+
 5. For local testing, simply do
 ```
 python main.py
