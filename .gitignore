@@ -179,3 +179,6 @@ data/db/*prompt.txt
 
 # Local backup of the 2023 database and prompts
 data/db_backup_2023/
+
+# Candidate replacement images (not used by the app)
+image_candidates/

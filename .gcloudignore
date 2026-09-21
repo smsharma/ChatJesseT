@@ -19,3 +19,6 @@ __pycache__/
 /setup.cfg
 # Local backups and raw sources not needed at runtime
 data/db_backup_2023/
+
+# Candidate replacement images (not used by the app)
+image_candidates/
