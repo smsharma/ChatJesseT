@@ -51,20 +51,23 @@ def answer_question(
     chunk,
     question,
     api_key=None,
-    model="gpt-3.5-turbo",
-    max_tokens=300,
+    model="gpt-5.6-luna",
+    max_tokens=500,
     temperature=0.25,
 ):
     """Return answer to query given context chunk."""
 
-    prompt = f"Use the following context to answer the question at the end.\nContext: {chunk}.\n{context_prompt}\nQuestion: {question}"
+    # Answer is rendered as plain text in the template, and should fit comfortably within max_tokens
+    format_prompt = "Answer in plain text only (no markdown, bullet points, or LaTeX), in at most 150 words."
+    prompt = f"Use the following context to answer the question at the end.\nContext: {chunk}.\n{context_prompt} {format_prompt}\nQuestion: {question}"
     response = completion_with_backoff(
         model=model,
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": prompt},
         ],
-        max_tokens=max_tokens,
+        max_completion_tokens=max_tokens,  # `max_tokens` is rejected by GPT-5+ models
+        reasoning_effort="none",  # Otherwise reasoning tokens eat the completion budget
         n=1,
         temperature=temperature,
     )
@@ -123,9 +126,7 @@ def run(query, api_key=None):
         ranked_indices = semantic_search(np.array(query_embedding), embeddings)
         logger.info(f"Semantic search completed successfully!")
         most_relevant_chunk = " ".join(
-            df_text.loc[
-                ranked_indices[:n_relevant_chunks], "text_chunks"
-            ].values.flatten()
+            df_text.loc[ranked_indices[:n_relevant_chunks], "text_chunks"].tolist()
         )
         logger.info(f"Most relevant chunk obtained successfully!")
         answer = answer_question(most_relevant_chunk, query, api_key)

@@ -17,3 +17,5 @@
 __pycache__/
 # Ignored by the build system
 /setup.cfg
+# Local backups and raw sources not needed at runtime
+data/db_backup_2023/

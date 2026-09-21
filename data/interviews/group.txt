@@ -1,85 +1,97 @@
-Current Postdocs:
-Cari Cesarotti
-Sokratis Trifinopoulos
-Siddharth Mishra-Sharma
-
-Current Ph.D. Students:
+Jesse Thaler's research group at MIT, as of September 2026.
+Research Group - Jesse Thaler
+Research Group
+Great ideas can come from researchers at any career stage, so I strive to cultivate a collaborative atmosphere in my group while also providing individual mentorship. We pursue a broad range of research in theoretical particle physics, and we often find connections to adjacent fields.
+Joining My Group
+Mentoring CV
+MIT Physics Community Values
+Postdocs
+Inbar Savoray
+Kevin Langhoff
+Xiaoyuan Zhang
+So Chigusa
+Ph.D. Students
+Pieter Van Steenweghen
+Gregorio de la Fuente Simarro
 Pamela Pajarillo
-Sean Benevedes
-Rikab Gambhir
-Samuel Alipour-fard
-
-Current B.S. and M.Eng. Students:
-Max Tan
-Mohit Dighamber
-Raymond Wynne
-
-Current Visitors:
-Brian Nord
-Kaća Bradonjić
-
-Former Postdocs:
-Lena Funcke, Assistant Professor, University of Bonn
-Katelin Schutz, Assistant Professor, McGill
-Pouya Asadi, Postdoctoral Researcher, University of Oregon
+Alumni
+Postdocs
+Kyle Lee, Assistant Physicist, Argonne N.L.
+Cari Cesarotti, Postdoctoral Researcher, CERN
+Sokratis Trifinopoulos, Postdoctoral Researcher, Northwestern
+Siddharth Mishra-Sharma, Assistant Professor, Boston U., Member of Technical Staff, Anthropic
+Lena Funcke, Clausius Professor, U. Bonn
+Katelin Schutz, Assistant Professor, Canada Research Chair, McGill
+Pouya Asadi, Project Scientist, U.C. Santa Cruz
 Bernhard Mistlberger, Staff Scientist, SLAC
-Frédéric Dreyer, University Research Fellow, Oxford
-Yotam Soreq, Assistant Professor, Technion
-Benjamin Safdi, Assistant Professor, U.C. Berkeley
-Wei Xue, Assistant Professor, University of Florida
-Simone Marzani, Associate Professor, University of Genova
-Gilly Elor, Postdoctoral Researcher, JGU Mainz
-Duff Neill, Staff Scientist, Los Alamos National Laboratory
-Andrew Larkoski, Assistant Project Scientist, UCLA
+Frédéric Dreyer, Senior Machine Learning Scientist, Prescient Design
+Yotam Soreq, Associate Professor, Technion
+Benjamin Safdi, Associate Professor, U.C. Berkeley
+Wei Xue, Associate Professor, U. Florida
+Simone Marzani, Associate Professor, U. Genova
+Gilly Elor, Research Fellow, U. Texas, Austin
+Duff Neill, Staff Scientist, Los Alamos N.L.
+Andrew Larkoski, Associate Editor, Physical Review D
 Matthew McCullough, Staff Scientist, CERN
-Keith Rehermann, Consultant, Ab Initio Software Corporation
-
-Former Ph.D. Students:
-Patrick Komiske, Researcher, River Run Trading
+Keith Rehermann, Software Engineer, Chainlink Labs
+Ph.D. Students
+Sean Benevedes, Postdoctoral Researcher, Georgia Tech
+Rikab Gambhir, Postdoctoral Researcher, U. Cincinnati
+Samuel Alipour-fard
+Patrick Komiske, Research Scientist, River Run Trading
 Eric Metodiev, Research Scientist, Renaissance Technologies
 Benjamin Elder, Research Scientist, IBM
-Lina Necib, Assistant Professor, MIT
-Yonatan Kahn, Assistant Professor, U. Illinois, Urbana-Champaign
-Daniele Bertolini, Data Scientist, Unlearn
+Lina Necib, Associate Professor, MIT
+Yonatan Kahn, Assistant Professor, U. Toronto
+Daniele Bertolini, Machine Learning Scientist, Unlearn
 Zoe Thomas, Applied Research Mathematician, Department of Defense
 Francesco D’Eramo, Associate Professor, U. Padova
-
-Former B.S. Students:
-Octavio Vega, Research Assistant, University of Hamburg
-Nishat Protyasha
+B.S. Students
+Canis Li
+Nipun Dour
+Marshall Taylor, Physics Ph.D. Candidate, Columbia U.
+Ammar Fayad
+Max Tan, EECS M.Eng. Candidate, MIT
+Mohit Dighamber, Software Engineer, Google
+Octavio Vega, Physics Ph.D. Candidate, U. Illinois, Urbana-Champaign
+Nishat Protyasha, Research Assistant, MIT Media Lab
 Serhii Kryhin, Physics Ph.D. Candidate, Harvard
-Christopher Miller, Technical Instructor, MIT
+Christopher Miller, Technical Instructor II, MIT
 Debaditya Pramanik, Physics Ph.D. Candidate, Princeton
-Ziqi Zhou
+Ziqi Zhou, Physics Ph.D. Candidate, Stony Brook
 Talya Klinger, Physics Ph.D. Candidate, Caltech
-Radha Mastandrea, Physics Ph.D Candidate, U.C. Berkeley
+Radha Mastandrea, Schmidt AI Fellow, U. Chicago
 Eleanor Hall, Physics Ph.D. Candidate, U.C. Berkeley
 Matthew Burns
-Kevin Zhou, Physics Ph.D Candidate, Stanford
+Kevin Zhou, Postdoctoral Researcher, U.C. Berkeley
 Aashish Tripathee, Postdoctoral Researcher, U. Michigan
-Trung Phan, Physics Ph.D. Candidate, Princeton
-T.J. Wilkason, Physics Ph.D. Candidate, Stanford
-Mobolaji Williams, Data Scientist, Jellyfish
-Dustin Katzin, Analyst, American International Group
+Trung Phan, Assistant Professor, Claremont Colleges
+T.J. Wilkason, Senior Quantum Engineer, Atom Computing
+Mobolaji Williams, Data Scientist, AE Studio
+Dustin Katzin, Software Engineering Team Lead, Bloomberg
 Tucker Chan, Physics Ph.D. Candidate, Stanford
-Lin Fei, Physics Ph.D. Candidate, Princeton
-Ken Van Tilburg, Assistant Professor, NYU
-
-Former M.Eng. Students:
-Nilai Sarda, Researcher, D.E. Shaw Group
+Lin Fei, Physics Ph.D., Princeton
+Ken Van Tilburg, Assistant Professor, Stanford
+M.Eng. Students
+Raymond Wynne, Physics Ph.D. Candidate, Caltech
+Nilai Sarda, Algorithm Developer, Hudson River Trading
 Preksha Naik, Physics Ph.D. Candidate, Caltech
-
-Former Visitors:
+Visitors
+Anne Galda
+Nathaniel Santiago
+Yiding Song, B.S. Candidate, Harvard
+Edward Gu
+Xinyue (Stella) Wu, Physics Ph.D. Candidate, Caltech
+Brian Nord, Director, Deep Skies Lab
+Kaća Bradonjić, Assitant Professor, Hampshire College
 Sergio Diaz
-Pedro Rivera-Cardona, PhD Candidate, University of Illinois, Urbana-Champaign
+Pedro Rivera-Cardona, Ph.D. Candidate, U. Illinois, Urbana-Champaign
 Athis Osathapan
-Shira Jackson, PhD Candidate, NYU
+Shira Jackson, Physics Ph.D. Candidate, NYU
 Andrew Turner, Postdoctoral Researcher, UPenn
 Maximilian Henderson
-Edward Hirst, Postdoc, Queen Mary University of London
-Rahim Leung, PhD Candidate, Imperial College London
+Edward Hirst, Postdoctoral Researcher, Queen Mary University of London
+Rahim Leung, Market Risk Analyst, Morgan Stanley
 Markus Schulze
-Alexis Romero, PhD Candidate, UC Irvine
-Nayara Fonseca, Research Scientist, IBM Research
-
-
+Alexis Romero, Physics Ph.D. Candidate, U.C. Irvine
+Nayara Fonseca, Research Fellow, U. Oxford

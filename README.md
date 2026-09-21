@@ -1,6 +1,6 @@
 # [ChatJesseT](https://chatjesset.com/)
 
-Created for April Fools' 2023 as a Flask app using OpenAI embeddings and chat completion. Uses the `gpt-3.5-turbo` model by default. With apologies to [Jesse Thaler](https://jthaler.net/).
+Created for April Fools' 2023 as a Flask app using OpenAI embeddings and chat completion. Uses the `gpt-5.6-luna` model by default (with `text-embedding-ada-002` embeddings). With apologies to [Jesse Thaler](https://jthaler.net/).
 
 ![Screenshot of deployed website.](static/cjt_1.png)
 
@@ -20,6 +20,12 @@ immediate signal. These are hidden from the repo for now for comedic
 purposes.
 
 4. To create text chunks and embeddings, run [`notebooks/01_data_collection.ipynb`](notebooks/01_data_collection.ipynb) and [`notebooks/02_embedding.ipynb`](notebooks/02_embedding.ipynb).
+
+   To update the database later (e.g. when Jesse gets a new job), add or edit text files in `data/interviews/` and `data/website/` and run
+```
+python -m utils.rebuild_db
+```
+   Only new or changed text chunks are re-embedded.
 
 5. For local testing, simply do
 ```

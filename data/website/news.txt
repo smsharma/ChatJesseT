@@ -1,0 +1,330 @@
+From jthaler.net/news, September 2026.
+In the News - Jesse Thaler
+In the News
+Press coverage and updates related to me and my research group. Last updated: September 20, 2026
+Recent News Articles
+Press Information
+News Archive
+Press coverage in the past 24 months:
+“Jesse Thaler named director of the Laboratory for Nuclear Science”
+MIT News, July 2026
+I’m excited to bring LNS into the next wave of discoveries supported by AI-driven capabilities.
+“NSF renews support for MIT-led AI and physics institute, expanding a new model for discovery”
+MIT News, June 2026
+From the beginning, IAIFI has been built around a two-way street: AI enabling better physics, and physics enabling better AI.
+“Boston University Joins National Science Foundation Institute Pushing Frontiers of Physics and AI”
+The Brink (BU News), June 2026
+We’re excited to see Boston University play an important role in IAIFI, adding real intellectual strength and reinforcing the collaborative model that has been central to the institute from the start.
+“3 Questions: On the future of AI and the mathematical and physical sciences”
+MIT News, March 2026
+The virtuous cycle of AI and science has the potential to be truly transformative — offering deeper insight into AI, accelerating scientific discovery, and producing robust tools for both.
+“Our elegant universe: rethinking nature’s deepest principle”
+New Scientist, January 2026
+By definition, the theory that matches experiment is beautiful.
+“Inside the wild experiments physicists would do with zero limits: A muon collider”
+New Scientist, December 2025
+Audacity has often fuelled progress in my field of particle physics.
+“AI for Physics Discovery”
+Discovery Engines (with Nabil Laoudji), August 2025
+And now there are things that I can’t unsee.
+“Review: Machine Learning in Quantum Sciences”
+Cambridge University Press, June 2025
+Imagine trying to do cutting-edge research in the quantum sciences without knowing artificial intelligence (AI) and machine learning (ML).
+“Distinguishing Between Type I & Type II Fun”
+Brown Physics, May 2025
+Jazz and physics (and insomnia) are my favorite things!
+“How I Learned to Stop Worrying and Love AI”
+Science@MIT, December 2024
+Deep learning is all the more powerful when combined with deep thinking.
+“Researchers Explore Mutual Benefits of AI and Science”
+Science@MIT, December 2024
+If one can express scientific problems in the abstract language of computation, one can blur the boundaries between disciplines and leverage AI advances to tackle problems across both AI and science.
+“In conversation: Jesse Thaler”
+FirstPrinciples, November 2024
+The off-the-shelf AI doesn’t really operate in a way that we can use for scientific discovery. But it’s close. And we can have a nice synergy with the computer science community to drive discovery in both fields.
+“Physics, AI, and the future of discovery”
+Physics Today, November 2024
+I’m holding on for dear life as my junior colleagues drag me deeper and deeper into this world that I so distrusted at first.
+Recent Papers
+All Papers by Year
+All Papers by Topic
+Papers posted to the arXiv from the past 12 months:
+Simplex Demixing: Disentangling Multiple Light-Flavor Jets at Colliders
+Gregorio de la Fuente and Jesse Thaler, arXiv 2026
+The Well-Tempered Likelihood: Honest Confidence Intervals for Misspecified Models
+Benjamin Nachman and Jesse Thaler, arXiv 2026
+Interpreting ‘Interpretability’ and Explaining ‘Explainability’ in Machine Learning in Physics
+Rikab Gambhir, Luisa Lucie-Smith, and Jesse Thaler, arXiv 2026
+Reweighting Adversarial Networks for Unbinned Unfolding
+Umar Sohail Qureshi, Krish Desai, Jesse Thaler, and Benjamin Nachman, arXiv 2026
+Many Wrongs Make a Right: Leveraging Biased Simulations Towards Unbiased Parameter Inference
+Ezequiel Alvarez, Sean Benevedes, Manuel Szewc, and Jesse Thaler, arXiv 2026
+Sven: Singular Value Descent as a Computationally Efficient Natural Gradient Method
+Samuel Bright-Thonney, Thomas R. Harvey, Andre Lukas, and Jesse Thaler, arXiv 2026
+Descending into the Modular Bootstrap
+Nathan Benjamin, A. Liam Fitzpatrick, Wei Li, and Jesse Thaler, JHEP 2026
+Improving Parton Shower Predictions via Precision Moments of Energy Flow Polynomials
+Benoît Assi, Kyle Lee, and Jesse Thaler, JHEP 2026
+The Future of Artificial Intelligence and the Mathematical and Physical Sciences (AI+MPS)
+Andrew Ferguson, Marisa LaFleur, Lars Ruthotto, Jesse Thaler, Yuan-Sen Ting, Pratyush Tiwary, Soledad Villar, et al., MLST 2026
+Recent/Upcoming Events
+All Presentations
+Talks and panels from the past 12 months:
+“Centaur Science: Adventures in AI+Physics”,
+School on Machine Learning and AI Methods at the LHC,
+Karachi, Pakistan, July 2026 virtual
+“Centaur Science: Adventures in AI+Physics”,
+Seminar,
+IRFU, July 2026
+“Descending into the Modular Bootstrap”,
+ENS Summer Institute,
+École Normale Supérieure, June 2026
+“Machine Learning through the Lens of Physics” (“Ingredients for ML”, “Optimal Transport”),
+Learning at the Frontier: Advanced School on Machine Learning for Particle Physics,
+AIPHY, June 2026
+“Centaur Science: Adventures in AI+Physics”,
+PEPR IA Days,
+Rennes, June 2026
+“Centaur Science: Adventures in AI+Physics”,
+Quantum Universe II Kick-Off Keynote,
+Planetarium Hamburg, June 2026
+“Descending into the Modular Bootstrap”,
+Talks Series,
+FirstPrinciples, June 2026 virtual
+“QCD Theory meets Information Theory”,
+Seminar,
+LPNHE, Paris, June 2026
+“Descending into the Modular Bootstrap”,
+Seminar,
+IHES, May 2026
+“Machine Learning and New Methodologies in HEP”,
+Large Hadron Collider Physics Conference (LHCP 2026),
+Paris, May 2026
+“Centaur Science: Adventures in AI+Physics”,
+Physics Colloquium,
+U. Genova, May 2026
+“Descending into the Modular Bootstrap”,
+ML4HEP Seminar,
+Annecy-Geneva-Lausanne, May 2026 virtual
+“Centaur Science: Adventures in AI+Physics”,
+DataIA Seminar,
+Université Paris-Saclay, May 2026
+“Descending into the Modular Bootstrap”,
+Theoretical Physics Colloquium,
+U. Oxford, May 2026
+“Descending into the Modular Bootstrap”,
+DAMTP Colloquium,
+U. Cambridge, April 2026
+“Centaur Science: Adventures in AI+Physics”,
+Hans Jensen Lecture,
+Heidelberg U., April 2026
+“Predictably Uncertain: Academic Publishing in the Era of AI”,
+Virtual Salon,
+Annual Reviews, March 2026 virtual
+“Centaur Science: Adventures in AI+Physics”,
+Physics Colloquium,
+U. Geneva, March 2026
+“Centaur Science: Adventures in AI+Physics”,
+AI4Science Launch Event,
+Sorbonne Center for Artificial Intelligence, March 2026
+“Centaur Science: Adventures in AI+Physics”,
+Colloquium,
+CERN, February 2026
+“The Future of Artificial Intelligence and the Mathematical and Physical Sciences”,
+Astronomy & Astrophysics Advisory Committee,
+NSF/NASA/DOE, January 2026 virtual
+“Deep Learning + Deep Thinking = Deeper Understanding”,
+Spritz of Science,
+Il Conventino Firenze, January 2026
+“Machine Learning for Fundamental Physics” (“The Rise of Centaur Science”, “Machine Learning through the Lens of Physics”, “Frequent(ist)ly Asked Questions”, “Jets in Space”, “The Future of AI+Physics”),
+Lectures on the Theory of Fundamental Interactions,
+GGI, Florence, January 2026
+“Centaur Science: Particle Physics meets Machine Learning”,
+Colloquium,
+NIKHEF, December 2025
+“QCD Theory meets Information Theory”,
+Séminaire Général,
+IPhT Saclay, December 2025
+“Deep Learning + Deep Thinking = Deeper Understanding”,
+Chaire Georges Lemaître Public Lecture,
+Université catholique de Louvain, November 2025
+“Centaur Science: Particle Physics meets Machine Learning” (“Case Studies in Centaur Science”, “Machine Learning through the Lens of Physics”, “Frequent(ist)ly Asked Questions”, “Jets in Space”, “The Future of AI+Physics”),
+Chaire Georges Lemaître Lectures,
+Université catholique de Louvain, November 2025
+“The Future of Artificial Intelligence and the Mathematical and Physical Sciences”,
+AI/ML Science and Technology Interest Group,
+NASA Cosmic Origins Program, November 2025 virtual
+News Archive
+Profiles and Highlights
+“Jesse Thaler named director of the Laboratory for Nuclear Science”
+MIT News, July 2026
+I’m excited to bring LNS into the next wave of discoveries supported by AI-driven capabilities.
+“NSF renews support for MIT-led AI and physics institute, expanding a new model for discovery”
+MIT News, June 2026
+From the beginning, IAIFI has been built around a two-way street: AI enabling better physics, and physics enabling better AI.
+“3 Questions: On the future of AI and the mathematical and physical sciences”
+MIT News, March 2026
+The virtuous cycle of AI and science has the potential to be truly transformative — offering deeper insight into AI, accelerating scientific discovery, and producing robust tools for both.
+“AI for Physics Discovery”
+Discovery Engines (with Nabil Laoudji), August 2025
+And now there are things that I can’t unsee.
+“Distinguishing Between Type I & Type II Fun”
+Brown Physics, May 2025
+Jazz and physics (and insomnia) are my favorite things!
+“How I Learned to Stop Worrying and Love AI”
+Science@MIT, December 2024
+Deep learning is all the more powerful when combined with deep thinking.
+“In conversation: Jesse Thaler”
+FirstPrinciples, November 2024
+The off-the-shelf AI doesn’t really operate in a way that we can use for scientific discovery. But it’s close. And we can have a nice synergy with the computer science community to drive discovery in both fields.
+“Faces of CISE: Jesse Thaler, Ph.D.”
+NSF CISE Newsletter, May 2024
+“Jesse Thaler: Then and Now / 2011 Early Career Award Winner”
+DOE News, December 2021
+“Using AI to Drill Down in Physics”
+ACM News, July 2021
+“Can a Computer Devise a Theory of Everything?”
+New York Times, November 2020
+“NSF advances artificial intelligence research with new nationwide institutes”
+NSF News, August 2020
+“National Science Foundation awards $20M to launch artificial-intelligence institute”
+Harvard Gazette, August 2020
+“National Science Foundation announces MIT-led Institute for Artificial Intelligence and Fundamental Interactions”
+MIT News, August 2020
+“A new metric to capture the similarity between collider events”
+Phys.org, August 2019
+“MIT physicists: Social networks could hold the key to finding new particles”
+Ars Technica, July 2019
+“Seeking new physics, scientists borrow from social networks”
+MIT News, July 2019
+“Miracles when you use the right metric”
+Collider Blog, February 2019
+“A Fresh Look at Quark-Gluon Plasma Soup”
+AIP Inside Science, July 2018
+“Center for Theoretical Physics celebrates 50 years”
+MIT News, March 2018
+“Jesse Thaler: Seeking the fundamental nature of matter”
+MIT News, November 2017
+“Chalkboard theorist”
+MIT Spotlight, November 2017
+“First open-access data from large collider confirm subatomic particle patterns”
+MIT Newsletter, September 2017
+“Team simulates a magnetar to seek dark matter particle”
+MIT Newsletter, October 2016
+“Miller Fellow Focus: Jesse Thaler”
+Miller Institute Newsletter, September 2007
+Awards and Honors
+APS Fellow: “Seven from MIT named American Physical Society Fellows for 2022”
+MIT News, October 2022
+Simons Investigator: “Three MIT faculty members named 2022 Simons Investigators”
+MIT News, June 2022
+DOE QuantISED: “Center for Theoretical Physics professors earn DOE Quantum Information Science Awards”
+MIT News, October 2018
+Promotion: “School of Science professors granted tenure”
+MIT News, June 2017
+Edgerton Award: “Biobarrier explorer and dark matter theorist win MIT’s prestigious junior faculty award”
+MIT News, April 2016
+Sloan Fellowship: “Six MIT researchers win Sloan Research Fellowships”
+MIT News, February 2013
+PECASE Award: “Five MIT researchers win presidential early career honors”
+MIT News, July 2012
+DOE Early Career Award: “Five from MIT receive DoE early career research grants”
+MIT News, June 2011
+Quotations and Perspectives
+“Boston University Joins National Science Foundation Institute Pushing Frontiers of Physics and AI”
+The Brink (BU News), June 2026
+We’re excited to see Boston University play an important role in IAIFI, adding real intellectual strength and reinforcing the collaborative model that has been central to the institute from the start.
+“Our elegant universe: rethinking nature’s deepest principle”
+New Scientist, January 2026
+By definition, the theory that matches experiment is beautiful.
+“Inside the wild experiments physicists would do with zero limits: A muon collider”
+New Scientist, December 2025
+Audacity has often fuelled progress in my field of particle physics.
+“Review: Machine Learning in Quantum Sciences”
+Cambridge University Press, June 2025
+Imagine trying to do cutting-edge research in the quantum sciences without knowing artificial intelligence (AI) and machine learning (ML).
+“Researchers Explore Mutual Benefits of AI and Science”
+Science@MIT, December 2024
+If one can express scientific problems in the abstract language of computation, one can blur the boundaries between disciplines and leverage AI advances to tackle problems across both AI and science.
+“Physics, AI, and the future of discovery”
+Physics Today, November 2024
+I’m holding on for dear life as my junior colleagues drag me deeper and deeper into this world that I so distrusted at first.
+“Machine learning and theory”
+Symmetry Magazine, April 2024
+To actually phrase some of the aspects of the scientific process in rigorous, algorithmic terms such that a computer could do it — that itself is a rich scientific endeavor, and one that has a chance of really accelerating the way that we do scientific discovery.
+“MIT faculty, instructors, students experiment with generative AI in teaching and learning”
+MIT News, April 2024
+You have power to change the behavior of those tools.
+“Scientists design program for the future of US particle physics research”
+Symmetry Magazine, December 2023
+Particle physics is global science. No matter what, there is no country that can afford the next collider by themselves.
+“From physics to generative AI: An AI model for advanced pattern generation”
+MIT News, September 2023
+I’m thrilled to see the myriad of ways ‘physics intelligence’ is transforming the field of artificial intelligence.
+“Will artificial intelligence ever discover new laws of physics?”
+New Scientist, November 2022
+I was trained to think about what are the laws of nature in our universe. Now it’s ‘what is the space of all possible rules?’
+“Machine Learning Shaking Up Hard Sciences, Too”
+IEEE Spectrum, October 2022
+We’d like to have a machine learn to think more like a physicist, but we also just need to learn how to think a little bit more like a machine.
+“A Hint of Dark Matter Sends Physicists Looking to the Skies”
+Quanta Magazine, October 2021
+“Advancing AI theory with a first-principles understanding of deep neural networks”
+Facebook AI, June 2021
+“Quantum computer captures physics of high-energy particles”
+Physics World, February 2021
+While some aspects of particle scattering can be described in a classical language, nature is fundamentally quantum mechanical.
+“Faculty discuss Flexible P/NR policy”
+The Tech, March 2020
+Our goal was to come up with a grading policy that was simple, flexible, and discipline agnostic, with mechanisms to ensure that students would always be incentivized to engage in all of their classes.
+“The plot thickens for a hypothetical X17 particle”
+Phys.org, November 2019
+“With open data, scientists share their work”
+Symmetry Magazine, August 2019
+“CMS releases open data for Machine Learning”
+CERN News, July 2019
+“Scientists meet at Fermilab to discuss machine learning for jet physics”
+Fermilab News, November 2018
+“Lighting the way for dark matter”
+PNAS, October 2017
+“In the Dark about Dark Matter”
+Scientific American, October 2016
+Do we live in a universe where each discovery leads to deeper, more fundamental insights, or do we live in one where some parts have rhyme and reason, but others don’t?
+“Has a Hungarian physics lab found a fifth force of nature?”
+Nature, May 2016
+“What Physicists Are Looking for Now That They’ve Found the Higgs Boson”
+Bloomberg, April 2015
+“How Three Guys With $10K and Decades-Old Data Almost Found the Higgs Boson First”
+Wired Magazine, January 2015
+Figuring out what happened in a collider is like trying to figure out what your dog ate at the park yesterday. You can find out, but you have to sort through a lot of shit to do it.
+“‘Particle Fever’ documentary follows mystery of Higgs boson”
+Portsmouth Herald, May 2014
+“Connecting the visible universe with dark matter”
+Symmetry Magazine, November 2013
+“MIT’s Jesse Thaler Visits MHS”
+Mustang News, October 2012
+Here’s the universe, here’s pencil and paper, now go and find something new.
+“Brainchild of MIT scientist is bound for space shuttle”
+Boston Globe, August 2010
+The scientific case for it, especially now, is fantastic.
+Group Members in the News
+Cari Cesarotti: “The Next Generation of Particle Experiments”
+Sean Carroll’s Mindscape, September 2024
+Cari Cesarotti: “Science 30 Under 30 (2024)”
+Forbes, November 2023
+Cari Cesarotti: “Particle Physicists Dream of a Muon Collider”
+Scientific American, August 2023
+Akshunna S. Dogra and Rikab Gambhir: “Can you hear the shape of physics?”
+Imperial College News, July 2023
+Lina Necib: “Astroparticle Physicist Wins 2023 Valley Prize for Work on Dark Matter”
+APS News, October 2022
+Cari Cesarotti: “With open data, scientists share their work”
+Symmetry Magazine, August 2019
+Radha Mastandrea: “A passionate advocate for open data”
+MIT News, October 2018
+Radha Mastandrea: “Paying it forward: Fellowship boosts women in physics”
+MIT News, August 2018
+Kevin Zhou: “Seeking new stories about the physical world”
+MIT News, April 2017
+Kevin Zhou: “Four MIT students named 2017 Marshall Scholars”
+MIT News, November 2016

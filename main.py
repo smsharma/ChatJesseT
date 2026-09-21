@@ -40,6 +40,7 @@ def index():
                     "Please set api_key_mode to either 'user' or 'system'."
                 )
         except Exception as e:
+            logger.exception(f"Failed to answer query: {query}")
             result = f"Whoops something didn't quite work! Perhaps too many people are trying to ask me questions at the moment. Please try again later."
         return render_template(
             "index.html", result=result, query=query, show_api_key_box=SHOW_API_KEY_BOX
