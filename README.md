@@ -1,6 +1,6 @@
 # [ChatJesseT](https://chatjesset.com/)
 
-Created for April Fools' 2023 as a Flask app using OpenAI embeddings and chat completion. Uses the `gpt-3.5-turbo` model by default. With apologies to [Jesse Thaler](https://jthaler.net/).
+Created for April Fools' 2023 as a Flask app using OpenAI embeddings and chat completion. Uses the `gpt-5.6-luna` model by default (with `text-embedding-ada-002` embeddings). With apologies to [Jesse Thaler](https://jthaler.net/).
 
 ![Screenshot of deployed website.](static/cjt_1.png)
 

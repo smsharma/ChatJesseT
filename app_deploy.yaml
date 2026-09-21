@@ -1,4 +1,4 @@
-runtime: python310
+runtime: python313
 # entrypoint: gunicorn -b :$PORT app:app
 
 instance_class: F4
